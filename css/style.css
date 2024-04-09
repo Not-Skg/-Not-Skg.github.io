@@ -1,0 +1,31 @@
+.site-header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.left-button,
+.right-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.left-button:hover,
+.right-button:hover {
+    background-color: #777;
+}
+
+.right-buttons {
+    display: flex;
+}
+
+.right-button {
+    margin-left: 10px;
+}
