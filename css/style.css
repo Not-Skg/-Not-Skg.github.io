@@ -1,31 +1,21 @@
-.site-header {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+/* ###################   HEADER   #######################*/
+header {background-color: rgb(18, 39, 110);
+    position:fixed;
+    z-index: 40;
+    width: 100%;}
+header img {
+    width: 60px;
 }
-
-.left-button,
-.right-button {
-    background-color: #555;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+header a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
 }
-
-.left-button:hover,
-.right-button:hover {
-    background-color: #777;
-}
-
-.right-buttons {
-    display: flex;
-}
-
-.right-button {
-    margin-left: 10px;
+header a:hover {
+    background-color: rgb(90, 90, 194);
 }
