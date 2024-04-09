@@ -1,7 +1,7 @@
 /* ###################   HEADER   #######################*/
 header {background-color: rgb(18, 39, 110);
     position:fixed;
-    z-index: 110;
+    z-index: 400;
     width: 100%;}
 header img {
     width: 60px;
