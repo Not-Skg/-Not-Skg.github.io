@@ -5,6 +5,7 @@ header {background-color: rgb(18, 39, 110);
     width: 100%;}
 header img {
     width: 60px;
+    background-color: rgb(20, 90, 20);
 }
 header nav {
     display: flex;
