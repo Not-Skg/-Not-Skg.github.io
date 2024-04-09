@@ -50,22 +50,4 @@ main hr {
     width: 70%;
     color: orange;
 }
-.evenement {
-    display: flex;
-    flex-wrap : wrap;
-    align-content : center;
-    align-items: first baseline;
-    justify-content : space-around;
-    width: 80%;
-}
-.services {
-    display : flex;
-    flex-wrap : wrap;
-    align-content : center;
-    align-items : center;
-    justify-content : space-around;
-}
-.services section {
-    width: 30%;
-}
 
