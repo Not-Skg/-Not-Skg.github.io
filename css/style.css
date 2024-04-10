@@ -1,3 +1,95 @@
+@font-face {
+  font-family: 'merriweather-regular';
+  src: url("/fonts/post/merriweather-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweather-italic';
+  src: url("/fonts/post/merriweather-italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'merriweather-bold';
+  src: url("/fonts/post/merriweather-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweather-bolditalic';
+  src: url("/fonts/post/merriweather-bolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'merriweather-black';
+  src: url("/fonts/post/merriweather-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweather-heavyitalic';
+  src: url("/fonts/post/merriweather-heavyitalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'merriweather-light';
+  src: url("/fonts/post/merriweather-light.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweather-lightitalic';
+  src: url("/fonts/post/merriweather-lightitalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* New Import */
+@font-face {
+  font-family: 'Bevan';
+  src: url("/fonts/post/Bevan.ttf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+h1, h2, h3, h4 {
+  font-family: 'merriweather-bold';
+  font-weight: 700;
+  font-style: normal;
+}
+
+[role="note"] {
+  font-family: 'merriweather-light';
+  font-weight: 200;
+  font-style: normal;
+}
+
+blockquote {
+  font-family: 'merriweather-lightitalic';
+  font-weight: 200;
+  font-style: italic;
+}
+
+a[role="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+  font-family: 'merriweather-regular';
+  font-weight: 400;
+  font-style: normal;
+}
+
+h5, h6, dl dt {
+  font-family: 'merriweather-italic';
+  font-weight: 400;
+  font-style: italic;
+}
+
+
 /* HEADER */
 
 header{
