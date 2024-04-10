@@ -378,3 +378,77 @@ header nav ul li:hover a{
     font-size: 60px;
   }
 }
+
+
+
+/* INDEX */
+
+.index h1{
+  font-size: 60px;
+  -webkit-animation: none;
+}
+
+.index h1 span{
+  font-weight: bold;
+  padding: 20px;
+  color: #f6f6f6;
+  background-color: #696969;
+}
+
+.index h2{
+  font-size: 40px;
+  margin-left: 22%;
+  text-align: left;
+  -webkit-animation: none;
+}
+
+.index h5{
+  font-weight: 900;
+  padding-left: 0%;
+  text-align:left;
+}
+
+.index a{
+  text-decoration:none;
+}
+
+.index li{
+  padding-left: 5%;
+}
+
+.index li a{
+  font-size: 21px;
+}
+
+.index a:hover{
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 575px) {
+  .index{
+    width: 100%;
+  }
+
+  .index h2{
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 475px) {
+  .index h1{
+    font-size: 50px;
+  }
+
+  .index li{
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 380px) {
+  .index h1{
+    font-size: 40px;
+  }
+}
