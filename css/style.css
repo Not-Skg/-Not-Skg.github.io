@@ -454,3 +454,46 @@ header nav ul li:hover a{
 
 
 
+/* New Import */
+@font-face {
+  font-family: 'Bevan';
+  src: url("/fonts/post/Bevan.ttf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+h1, h2, h3, h4 {
+  font-family: 'merriweather-bold';
+  font-weight: 700;
+  font-style: normal;
+}
+
+[role="note"] {
+  font-family: 'merriweather-light';
+  font-weight: 200;
+  font-style: normal;
+}
+
+blockquote {
+  font-family: 'merriweather-lightitalic';
+  font-weight: 200;
+  font-style: italic;
+}
+
+a[role="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+  font-family: 'merriweather-regular';
+  font-weight: 400;
+  font-style: normal;
+}
+
+h5, h6, dl dt {
+  font-family: 'merriweather-italic';
+  font-weight: 400;
+  font-style: italic;
+}
+
+
