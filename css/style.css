@@ -28,7 +28,7 @@ header .header-logo img {
   height: 50px;
 }
 
-header .header-brand{
+header .header-brand {
   font-family: Catamaran;
   font-size: 24px;
   font-weight: 900;
@@ -38,13 +38,14 @@ header .header-brand{
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
-  margin: 31px 0;
+  margin: 10px 0; /* réduire cette valeur de marge */
   text-align: left;
   line-height: 38px;
   border-right: 3px solid #111;
   padding: 0 20px 0 5px;
   float: left;
 }
+
 
 header .header-brand:hover{
   text-decoration: none;
