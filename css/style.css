@@ -27,6 +27,14 @@ h5, h6, dl dt {
   font-style: italic;
 }
 
+
+container{
+   background-color: #f2f2f2
+
+  
+}
+
+
 /* HEADER */
 header {
   position: fixed;
