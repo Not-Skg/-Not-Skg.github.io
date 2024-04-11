@@ -28,11 +28,10 @@ h5, h6, dl dt {
 }
 
 
-#container{
-   background-color: #f2f2f2
-
-  
+.container {
+  background-color: yellow;
 }
+
 
 
 /* HEADER */
