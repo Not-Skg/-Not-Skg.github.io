@@ -278,9 +278,6 @@ header nav ul li:hover a{
   align-items: center; /* ajouter cette propriété pour aligner les éléments enfants verticalement au centre */
 }
 
-.toc ol li.indented {
-  padding-left: 20px; /* Ajouter une indentation supplémentaire de 20px */
-}
 
 
 
