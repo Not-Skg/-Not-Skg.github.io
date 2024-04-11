@@ -17,16 +17,19 @@ header{
   padding: 0 20px;
 }
 
-header .header-logo{
+header .header-logo {
   text-align: center;
   margin-top: 10px;
   padding-left: 10px;
   float: left;
+  margin-right: -15px; /* ajouter une marge négative à droite */
 }
 
 header .header-logo img {
   height: 50px;
 }
+
+
 
 header .header-brand {
   font-family: Catamaran;
@@ -38,13 +41,14 @@ header .header-brand {
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
-  margin: 10px 0; /* réduire cette valeur de marge */
+  margin: 31px 0 0 0; /* réinitialiser la marge supérieure */
   text-align: left;
   line-height: 38px;
   border-right: 3px solid #111;
   padding: 0 20px 0 5px;
   float: left;
 }
+
 
 
 header .header-brand:hover{
