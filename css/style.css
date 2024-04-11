@@ -42,7 +42,7 @@ header .header-brand {
 header nav {
   display: flex; /* Utiliser Flexbox pour aligner les éléments */
   align-items: center; /* Centrer verticalement les éléments */
-  /* Supprimer la marge à gauche pour étendre nav au maximum possible à gauche */
+  margin-left: 20px; /* Ajouter une marge à gauche pour compenser la barre verticale */
 }
 
 header nav ul {
