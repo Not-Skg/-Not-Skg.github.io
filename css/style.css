@@ -273,9 +273,6 @@ header nav ul li:hover a{
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .toc ol ol {
@@ -289,7 +286,7 @@ header nav ul li:hover a{
   font-size: 24px;
   color: #333;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left; /* Aligner les éléments à gauche */
 }
 
 .toc ol li a {
@@ -304,6 +301,10 @@ header nav ul li:hover a{
   border-radius: 5px;
 }
 
+
+
+
+/* BANNER */
 .banner-container {
   background: url("../banner.png");
   min-height: 50vh;
