@@ -273,13 +273,14 @@ header nav ul li:hover a{
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* ajouter cette propriété pour créer un conteneur flexible */
-  flex-direction: column; /* aligner les éléments enfants verticalement */
-  align-items: center; /* ajouter cette propriété pour aligner les éléments enfants verticalement au centre */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-
+.toc ol ol {
+  padding-left: 20px; /* Ajouter une indentation de 20px aux éléments imbriqués */
+}
 
 .toc ol li {
   font-family: 'merriweather-regular';
@@ -287,6 +288,7 @@ header nav ul li:hover a{
   font-style: normal;
   font-size: 24px;
   color: #333;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -301,10 +303,6 @@ header nav ul li:hover a{
   padding: 5px 10px;
   border-radius: 5px;
 }
-.toc ol li.indented {
-  padding-left: 20px; /* Ajouter une indentation supplémentaire de 20px */
-}
-
 
 .banner-container {
   background: url("../banner.png");
