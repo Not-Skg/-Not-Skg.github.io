@@ -1,5 +1,9 @@
-
-h1, h2, h3, h4 {
+/* Général */
+h1, h2, h3, h4,
+a[role="button"],
+input[type="submit"],
+input[type="reset"],
+button {
   font-family: 'merriweather-bold';
   font-weight: 700;
   font-style: normal;
@@ -17,25 +21,14 @@ blockquote {
   font-style: italic;
 }
 
-a[role="button"],
-input[type="submit"],
-input[type="reset"],
-button {
-  font-family: 'merriweather-regular';
-  font-weight: 400;
-  font-style: normal;
-}
-
 h5, h6, dl dt {
   font-family: 'merriweather-italic';
   font-weight: 400;
   font-style: italic;
 }
 
-
 /* HEADER */
-
-header{
+header {
   position: fixed;
   background: #fff;
   width: 100%;
@@ -43,27 +36,23 @@ header{
   top: 0;
   left: 0;
   box-sizing: border-box;
-  z-index:99;
+  z-index: 99;
 }
 
-
-header .header-logo{
+header .header-logo {
   text-align: center;
   margin-top: 10px;
   padding-left: 10px;
   float: left;
 }
 
-header .header-brand{
+header .header-brand {
   font-family: Catamaran;
   font-size: 24px;
   font-weight: 900;
   color: #111;
   text-transform: uppercase;
   display: block;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px 0;
   margin: 31px 0;
   text-align: left;
   line-height: 38px;
@@ -72,25 +61,24 @@ header .header-brand{
   float: left;
 }
 
-header .header-brand:hover{
+header .header-brand:hover {
   text-decoration: none;
 }
 
-
-header nav ul{
+header nav ul {
   display: flex;
   padding: 0;
   margin: 20px 0px 0px 20px;
   float: left;
 }
 
-header nav ul li{
+header nav ul li {
   list-style: none;
   padding: 0 16px;
   line-height: 60px;
 }
 
-header nav ul li a{
+header nav ul li a {
   font-family: Catamaran;
   font-size: 20px;
   color: #111;
@@ -100,7 +88,7 @@ header nav ul li a{
 }
 
 header nav ul li:hover,
-header nav ul li:hover a{
+header nav ul li:hover a {
   text-decoration: none;
   color: #fff;
   background-color: #333;
@@ -108,7 +96,7 @@ header nav ul li:hover a{
   text-decoration: none;
 }
 
-.menu-toggle{
+.menu-toggle {
   color: #111;
   float: right;
   line-height: 50px;
@@ -119,7 +107,6 @@ header nav ul li:hover a{
 }
 
 /* DROPDOWN */
-
 .dropbtn {
     display: block;
     font-family: Catamaran;
@@ -175,68 +162,6 @@ header nav ul li:hover a{
     background-color: #333;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 1200px) {
-
-  .dropdown
-  {
-    display: none;
-  }
-
-}
-@media (max-width: 1000px) {
-
-  header
-  {
-    padding: 0;
-  }
-
-  .menu-toggle
-  {
-    display: block;
-    padding: 25px 20px;
-  }
-
-  header nav
-  {
-    float: right;
-    position: absolute;
-    width: 100%;
-    height: calc(300vh - 50px);
-    background: #fff;
-    opacity: 0.8;
-    top: 90px;
-    left: -100%;
-    transition: 0.5s;
-  }
-
-  header nav.active
-  {
-    left: 0;
-  }
-
-  header nav ul
-  {
-    text-align: center;
-    display: block;
-    position: absolute;
-    left: 48%;
-    transform: translatex(-50%);
-  }
-
-  header nav ul li {
-    text-align: center;
-  }
-
-  header nav ul li a{
-    font-size: 35px;
-  }
-
-  header nav ul li:hover,
-  header nav ul li:hover a{
-    color: #000;
-    background-color: transparent !important;
-    font-weight: 900;
-  }
-
-
-}
+  .dropdown {
