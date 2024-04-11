@@ -84,8 +84,6 @@ header nav ul li:hover a {
 .dropdown {
   position: relative; /* Positionner relativement pour que le contenu du dropdown soit positionné absolument par rapport à lui */
   margin-left: auto; /* Déplacer "Code Snippet" vers la droite */
-  display: flex; /* Ajouter Flexbox pour aligner les éléments verticalement */
-  align-items: center; /* Centrer verticalement les éléments */
 }
 
 .dropbtn {
