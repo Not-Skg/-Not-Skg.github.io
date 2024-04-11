@@ -372,3 +372,18 @@ header nav ul li:hover a{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* 
+celui la marche
+.banner-container {
+  background: url("../banner.png");
+  min-height: 50vh;
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ */
+
