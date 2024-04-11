@@ -130,18 +130,17 @@ header nav ul li:hover a{
 }
 
 .dropdown-content a {
-    font-size: 20px;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    text-align: center;
-    display: block;
+  font-size: 20px;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
 }
 
 .dropdown-content a:hover {
-  text-decoration: none;
-  color: #fff;
-  background-color: #333;
+  background-color: #ddd; /* changer la couleur de fond en gris lorsque la souris est sur l'onglet */
+  color: #333; /* changer la couleur du texte en noir lorsque la souris est sur l'onglet */
 }
 
 .dropdown:hover .dropdown-content {
