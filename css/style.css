@@ -1,20 +1,21 @@
+/* MAIN */
 
+main {
+  margin-top: 90px; /* ajouter cette propriété pour ajouter un espace entre le header et le table des matières */
+}
+
+/* HEADER */
 
 /* HEADER */
 
 header{
-  position: fixed;
+  position: fixed; /* ajouter cette propriété pour rendre le header fixe */
+  top: 0; /* ajouter cette propriété pour positionner le header en haut de la page */
   background: #fff;
   width: 100%;
   height: 90px;
-  top: 0;
-  left: 0;
   box-sizing: border-box;
   z-index:99;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
 }
 
 header .header-logo {
@@ -217,7 +218,6 @@ header nav ul li:hover a{
 
 }
 
-
 /* TABLE OF CONTENTS */
 
 .toc {
@@ -250,9 +250,9 @@ header nav ul li:hover a{
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* ajouter cette propriété pour créer un conteneur flexible */
-  flex-direction: column; /* aligner les éléments enfants verticalement */
-  align-items: center; /* ajouter cette propriété pour aligner les éléments enfants verticalement au centre */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .toc ol li {
