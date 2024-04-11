@@ -276,7 +276,7 @@ header nav ul li:hover a{
 }
 
 .toc ol ol {
-  padding-left: 20px; /* Ajouter une indentation de 20px aux éléments imbriqués */
+  padding-left: 20px;
 }
 
 .toc ol li {
@@ -286,7 +286,7 @@ header nav ul li:hover a{
   font-size: 24px;
   color: #333;
   margin-bottom: 10px;
-  text-align: left; /* Aligner les éléments à gauche */
+  text-align: left;
 }
 
 .toc ol li a {
@@ -301,19 +301,20 @@ header nav ul li:hover a{
   border-radius: 5px;
 }
 
+/* Nouvelles règles CSS pour centrer le contenu de "TryHackMe" */
 .tryhackme-toc {
-  padding-left: 20%; /* Ajuster ce pourcentage pour décaler le contenu vers le centre */
-  max-width: 60%; /* Ajuster ce pourcentage pour définir la largeur maximale du contenu centré */
+  padding-left: 20%;
+  max-width: 60%;
   margin: 0 auto;
   display: block;
 }
 
 .tryhackme-toc ol {
-  padding-left: 0; /* Réinitialiser l'indentation pour les éléments imbriqués dans cette section */
+  padding-left: 0;
 }
 
 .tryhackme-toc ol ol {
-  padding-left: 20px; /* Appliquer l'indentation de 20px aux éléments imbriqués dans cette section */
+  padding-left: 20px;
 }
 
 
