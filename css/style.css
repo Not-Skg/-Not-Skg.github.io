@@ -226,16 +226,24 @@ header nav ul li:hover a{
   width: 100%;
 }
 
+.toc h1 {
+  font-family: 'merriweather-bold';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  color: #333;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .toc h3 {
   font-family: 'merriweather-bold';
   font-weight: 700;
   font-style: normal;
-  font-size: 60px; /* augmenter la taille de la police */
-  color: #fff; /* changer la couleur du texte en blanc */
-  background-color: #333; /* ajouter une couleur d'arrière-plan */
-  padding: 20px; /* ajouter du rembourrage */
-  margin-top: 100px;
-  margin-bottom: 50px; /* ajouter une marge inférieure pour séparer le titre du contenu suivant */
+  font-size: 24px;
+  color: #333;
+  margin-top: 100px; /* ajouter cette propriété pour ajouter un espace entre le header et le table des matières */
   text-align: center;
 }
 
@@ -278,4 +286,3 @@ header nav ul li:hover a{
   padding: 5px 10px;
   border-radius: 5px;
 }
-
