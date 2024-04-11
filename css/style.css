@@ -1,11 +1,9 @@
 /* MAIN */
-
 main {
   margin-top: 90px; /* ajouter cette propriété pour ajouter un espace entre le header et le table des matières */
 }
 
 /* HEADER */
-
 header {
   position: fixed; /* Restez en haut de la page lors du défilement */
   top: 0;
@@ -17,6 +15,7 @@ header {
   align-items: center; /* Centrer verticalement les éléments */
   box-sizing: border-box;
   z-index: 99;
+  justify-content: space-between; /* Ajouter cette propriété pour répartir les éléments uniformément */
 }
 
 header .header-logo {
@@ -37,6 +36,8 @@ header .header-brand {
   border-right: 3px solid #111; /* Ajouter la barre verticale à droite de SKG */
   padding-right: 10px; /* Ajouter un remplissage à droite pour la barre verticale */
   line-height: 1; /* Réinitialiser la hauteur de ligne pour centrer verticalement le texte */
+  display: flex; /* Ajouter cette propriété pour aligner les éléments verticalement */
+  align-items: center; /* Centrer verticalement les éléments */
 }
 
 header nav {
@@ -80,10 +81,10 @@ header nav ul li:hover a {
 }
 
 /* DROPDOWN */
-
 .dropdown {
   position: relative; /* Positionner relativement pour que le contenu du dropdown soit positionné absolument par rapport à lui */
   margin-left: auto; /* Déplacer "Code Snippet" vers la droite */
+  margin-right: 0; /* Ajouter cette propriété pour coller "Code Snippet" à la bordure droite */
 }
 
 .dropbtn {
@@ -131,6 +132,17 @@ header nav ul li:hover a {
   background-color: #333;
 }
 
+/* Ajouter ce sélecteur pour changer la couleur du texte dans le dropdown */
+.dropdown-content a {
+  color: #333;
+}
+
+/* Ajouter ce sélecteur pour augmenter la hauteur des li */
+header nav ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
 /* TABLE OF CONTENTS */
 
