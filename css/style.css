@@ -250,7 +250,7 @@ header nav ul li:hover a{
 }
 
 .toc h1 {
-  font-family: 'merriweather-bold';
+  font-family: 'Georgia, serif;
   font-weight: 700;
   font-style: normal;
   font-size: 36px;
@@ -301,7 +301,20 @@ header nav ul li:hover a{
   border-radius: 5px;
 }
 
+.tryhackme-toc {
+  padding-left: 20%; /* Ajuster ce pourcentage pour décaler le contenu vers le centre */
+  max-width: 60%; /* Ajuster ce pourcentage pour définir la largeur maximale du contenu centré */
+  margin: 0 auto;
+  display: block;
+}
 
+.tryhackme-toc ol {
+  padding-left: 0; /* Réinitialiser l'indentation pour les éléments imbriqués dans cette section */
+}
+
+.tryhackme-toc ol ol {
+  padding-left: 20px; /* Appliquer l'indentation de 20px aux éléments imbriqués dans cette section */
+}
 
 
 /* BANNER */
