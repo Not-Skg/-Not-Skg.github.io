@@ -278,6 +278,11 @@ header nav ul li:hover a{
   align-items: center; /* ajouter cette propriété pour aligner les éléments enfants verticalement au centre */
 }
 
+.toc ol ol {
+  padding-left: 20px; /* Ajouter une indentation à la liste imbriquée */
+}
+
+
 .toc ol li {
   font-family: 'merriweather-regular';
   font-weight: 400;
