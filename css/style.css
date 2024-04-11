@@ -15,7 +15,7 @@ header {
   align-items: center; /* Centrer verticalement les éléments */
   box-sizing: border-box;
   z-index: 99;
-  justify-content: space-between; /* Ajouter cette propriété pour répartir les éléments uniformément */
+  justify-content: space-between; /* Répartir les éléments entre le début et la fin */
 }
 
 header .header-logo {
@@ -44,6 +44,8 @@ header nav {
   display: flex; /* Utiliser Flexbox pour aligner les éléments */
   align-items: center; /* Centrer verticalement les éléments */
   margin-left: 20px; /* Ajouter une marge à gauche pour compenser la barre verticale */
+  flex-grow: 1; /* Ajouter cette propriété pour que la nav prenne tout l'espace disponible */
+  justify-content: space-between; /* Ajouter cette propriété pour répartir les éléments uniformément dans la nav */
 }
 
 header nav ul {
@@ -142,7 +144,13 @@ header nav ul li {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center; /* Centrer horizontalement le texte */
+  flex-grow: 1; /* Ajouter cette propriété pour que les li prennent tout l'espace disponible */
 }
+
+
+
+
 
 /* TABLE OF CONTENTS */
 
