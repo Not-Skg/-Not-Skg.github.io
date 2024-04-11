@@ -34,11 +34,15 @@ header .header-brand {
   color: #111;
   text-transform: uppercase;
   margin-right: 20px; /* Ajouter une marge à droite */
+  border-right: 3px solid #111; /* Ajouter la barre verticale à droite de SKG */
+  padding-right: 10px; /* Ajouter un remplissage à droite pour la barre verticale */
+  line-height: 1; /* Réinitialiser la hauteur de ligne pour centrer verticalement le texte */
 }
 
 header nav {
   display: flex; /* Utiliser Flexbox pour aligner les éléments */
   align-items: center; /* Centrer verticalement les éléments */
+  margin-left: 20px; /* Ajouter une marge à gauche pour compenser la barre verticale */
 }
 
 header nav ul {
@@ -50,6 +54,8 @@ header nav ul {
 
 header nav ul li {
   margin-right: 20px; /* Ajouter une marge à droite */
+  display: flex; /* Utiliser Flexbox pour aligner les éléments verticalement */
+  align-items: center; /* Centrer verticalement les éléments */
 }
 
 header nav ul li a {
@@ -59,6 +65,7 @@ header nav ul li a {
   text-transform: uppercase;
   text-decoration: none;
   display: block;
+  padding: 10px 0; /* Ajouter un remplissage vertical pour centrer le texte */
 }
 
 header nav ul li:hover a {
@@ -112,6 +119,12 @@ header nav ul li:hover a {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.dropdown:hover .dropbtn {
+  color: #fff;
+  background-color: #333;
+}
+
 
 /* TABLE OF CONTENTS */
 
