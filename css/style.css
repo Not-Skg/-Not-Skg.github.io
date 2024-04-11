@@ -302,7 +302,9 @@ header nav ul li:hover a{
   padding: 5px 10px;
   border-radius: 5px;
 }
-
+.toc ol li.indented {
+  padding-left: 20px; /* Ajouter une indentation supplémentaire de 20px */
+}
 
 
 .banner-container {
