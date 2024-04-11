@@ -234,6 +234,7 @@ header nav ul li:hover a{
   color: #333;
   margin-top: 50px;
   margin-bottom: 20px;
+  text-align: center; /* ajouter cette propriété pour centrer le texte */
 }
 
 .toc hr {
@@ -258,6 +259,7 @@ header nav ul li:hover a{
   font-size: 24px;
   color: #333;
   margin-bottom: 10px;
+  text-align: center; /* ajouter cette propriété pour centrer le texte */
 }
 
 .toc ol li a {
@@ -271,3 +273,4 @@ header nav ul li:hover a{
   padding: 5px 10px;
   border-radius: 5px;
 }
+
