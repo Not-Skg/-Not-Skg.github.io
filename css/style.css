@@ -42,7 +42,7 @@ header .header-brand {
 header nav {
   display: flex; /* Utiliser Flexbox pour aligner les éléments */
   align-items: center; /* Centrer verticalement les éléments */
-  margin-left: 20px; /* Ajouter une marge à gauche pour compenser la barre verticale */
+  /* Supprimer la marge à gauche pour étendre nav au maximum possible à gauche */
 }
 
 header nav ul {
@@ -84,6 +84,8 @@ header nav ul li:hover a {
 .dropdown {
   position: relative; /* Positionner relativement pour que le contenu du dropdown soit positionné absolument par rapport à lui */
   margin-left: auto; /* Déplacer "Code Snippet" vers la droite */
+  display: flex; /* Ajouter Flexbox pour aligner les éléments verticalement */
+  align-items: center; /* Centrer verticalement les éléments */
 }
 
 .dropbtn {
@@ -130,6 +132,7 @@ header nav ul li:hover a {
   color: #fff;
   background-color: #333;
 }
+
 
 
 /* TABLE OF CONTENTS */
