@@ -303,7 +303,7 @@ header nav ul li:hover a{
 
 
 .banner-container {
-  background: url("../banner.png");
+  background: url("./banner.png");
   min-height: 50vh;
   position: relative;
   
