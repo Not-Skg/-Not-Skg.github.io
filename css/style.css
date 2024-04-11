@@ -68,9 +68,12 @@ header nav ul li a {
   padding: 10px 0; /* Ajouter un remplissage vertical pour centrer le texte */
 }
 
+header nav ul li:hover {
+  background-color: #333; /* Ajouter la couleur de fond au <li> lors du survol */
+}
+
 header nav ul li:hover a {
   color: #fff;
-  background-color: #333;
 }
 
 /* DROPDOWN */
@@ -124,7 +127,6 @@ header nav ul li:hover a {
   color: #fff;
   background-color: #333;
 }
-
 
 /* TABLE OF CONTENTS */
 
