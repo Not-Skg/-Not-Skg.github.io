@@ -366,7 +366,7 @@ header nav ul li:hover a{
   background: url("../banner.png");
   min-height: 50vh;
   position: relative;
-  opacity: 0.65;
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
