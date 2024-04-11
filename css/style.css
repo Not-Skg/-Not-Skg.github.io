@@ -230,8 +230,10 @@ header nav ul li:hover a{
   font-family: 'merriweather-bold';
   font-weight: 700;
   font-style: normal;
-  font-size: 48px; /* augmenter la taille de la police */
-  color: #333;
+  font-size: 60px; /* augmenter la taille de la police */
+  color: #fff; /* changer la couleur du texte en blanc */
+  background-color: #333; /* ajouter une couleur d'arrière-plan */
+  padding: 20px; /* ajouter du rembourrage */
   margin-top: 100px;
   margin-bottom: 50px; /* ajouter une marge inférieure pour séparer le titre du contenu suivant */
   text-align: center;
