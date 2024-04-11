@@ -51,24 +51,26 @@ header .header-brand:hover{
 }
 
 header nav {
-  position: relative; /* Ajouter cette propriété */
   display: flex;
   padding: 0;
   margin: 0;
-  align-items: right; /* ajouter cette propriété pour centrer les boutons verticalement */
+  align-items: center; /* ajouter cette propriété pour centrer les boutons verticalement */
 }
 
 header nav ul {
   display: flex;
   padding: 0;
   margin: 0;
-  align-items: right; /* ajouter cette propriété pour centrer les boutons verticalement */
+  align-items: center; /* ajouter cette propriété pour centrer les boutons verticalement */
 }
 
 header nav ul li {
   list-style: none;
   padding: 0 16px;
-  line-height: 60px;
+  height: 60px; /* Ajouter cette propriété pour définir une hauteur fixe */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header nav ul li a {
@@ -157,70 +159,6 @@ header nav ul li:hover a{
     background-color: #333;
 }
 
-@media (max-width: 1200px) {
-
-  .dropdown
-  {
-    display: none;
-  }
-
-}
-@media (max-width: 1000px) {
-
-  header
-  {
-    padding: 0;
-  }
-
-  .menu-toggle
-  {
-    display: block;
-    padding: 25px 20px;
-  }
-
-  header nav
-  {
-    float: right;
-    position: absolute;
-    width: 100%;
-    height: calc(300vh - 50px);
-    background: #fff;
-    opacity: 0.8;
-    top: 90px;
-    left: -100%;
-    transition: 0.5s;
-  }
-
-  header nav.active
-  {
-    left: 0;
-  }
-
-  header nav ul
-  {
-    text-align: center;
-    display: block;
-    position: absolute;
-    left: 48%;
-    transform: translatex(-50%);
-  }
-
-  header nav ul li {
-    text-align: center;
-  }
-
-  header nav ul li a{
-    font-size: 35px;
-  }
-
-  header nav ul li:hover,
-  header nav ul li:hover a{
-    color: #000;
-    background-color: transparent !important;
-    font-weight: 900;
-  }
-
-}
 
 /* TABLE OF CONTENTS */
 
