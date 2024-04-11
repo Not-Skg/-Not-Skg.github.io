@@ -363,20 +363,13 @@ header nav ul li:hover a{
 
 
 .banner-container {
-  width: 100%;
-  height: 50vh;
-  background-color: #0D1321;
-  overflow: hidden; /* Hide any content that exceeds the container's dimensions */
-  position: relative; /* Position the container relative to its normal position */
+  background: url("../banner.jpg");
+  min-height: 50vh;
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.banner-image {
-  width: 90%;
-  height: auto; /* Permet à l'image de conserver son rapport d'aspect */
-  object-fit: cover;
-  object-position: center bottom; /* Center the image horizontally and position it at the bottom of the container */
-  position: absolute;
-  bottom: 0; /* Move the image to the bottom of the container */
-  left: 50%;
-  transform: translateX(-50%);
-}
