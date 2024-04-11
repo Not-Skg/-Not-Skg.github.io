@@ -367,11 +367,16 @@ header nav ul li:hover a{
   height: 50vh;
   background-color: #000;
   overflow: hidden; /* Hide any content that exceeds the container's dimensions */
+  position: relative; /* Position the container relative to its normal position */
 }
 
 .banner-image {
   width: 90%;
   height: 100%;
   object-fit: cover; /* Scale the image to fill the container while maintaining its aspect ratio and cropping if necessary */
-  object-position: center; /* Center the image inside the container */
+  object-position: center top; /* Center the image horizontally and position it at the top of the container */
+  position: absolute; /* Position the image absolutely relative to the container */
+  top: -10px; /* Move the image up by 10 pixels */
+  left: 50%; /* Move the image to the left by 50% of its width */
+  transform: translateX(-50%); /* Move the image back to the right by 50% of its width to center it horizontally */
 }
