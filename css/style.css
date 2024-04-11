@@ -4,91 +4,114 @@ main {
   margin-top: 90px; /* ajouter cette propriété pour ajouter un espace entre le header et le table des matières */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
 /* HEADER */
 
 header {
-  position: fixed; /* Restez en haut de la page lors du défilement */
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 90px;
   top: 0;
   left: 0;
-  width: 100%;
-  background: #fff;
-  height: 90px;
-  display: flex; /* Utiliser Flexbox pour aligner les éléments verticalement */
-  align-items: center; /* Centrer verticalement les éléments */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
   box-sizing: border-box;
   z-index: 99;
 }
 
 header .header-logo {
-  margin-right: 15px; /* Ajouter une marge à droite */
-}
-
-header .header-logo img {
-  height: 50px;
+  text-align: center;
+  margin-top: 10px;
+  padding-left: 10px;
 }
 
 header .header-brand {
-  font-family: Catamaran;
+  font-family: 'Catamaran', sans-serif;
   font-size: 24px;
   font-weight: 900;
   color: #111;
   text-transform: uppercase;
-  margin-right: 20px; /* Ajouter une marge à droite */
-  border-right: 3px solid #111; /* Ajouter la barre verticale à droite de SKG */
-  padding-right: 10px; /* Ajouter un remplissage à droite pour la barre verticale */
-  line-height: 1; /* Réinitialiser la hauteur de ligne pour centrer verticalement le texte */
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  margin: 31px 0;
+  text-align: left;
+  line-height: 38px;
+  border-right: 3px solid #111;
+  padding: 0 20px 0 5px;
 }
 
-header nav {
-  display: flex; /* Utiliser Flexbox pour aligner les éléments */
-  align-items: center; /* Centrer verticalement les éléments */
-  margin-left: 20px; /* Ajouter une marge à gauche pour compenser la barre verticale */
+header .header-brand:hover {
+  text-decoration: none;
 }
 
 header nav ul {
-  display: flex; /* Utiliser Flexbox pour aligner les éléments */
-  margin: 0;
+  display: flex;
+  align-items: center;
   padding: 0;
-  list-style: none;
+  margin: 0;
 }
 
 header nav ul li {
-  margin-right: 20px; /* Ajouter une marge à droite */
-  display: flex; /* Utiliser Flexbox pour aligner les éléments verticalement */
-  align-items: center; /* Centrer verticalement les éléments */
-  height: 100%; /* Ajouter une hauteur fixe */
+  list-style: none;
+  padding: 0 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 header nav ul li a {
-  font-family: Catamaran;
+  font-family: 'Catamaran', sans-serif;
   font-size: 20px;
   color: #111;
   text-transform: uppercase;
   text-decoration: none;
   display: block;
-  padding: 10px 0; /* Ajuster le remplissage vertical pour occuper tout l'espace du <li> */
-  width: 100%; /* Ajouter une largeur de 100% pour occuper tout l'espace du <li> */
-  text-align: center; /* Centrer horizontalement le texte */
+  padding: 18px 0;
+  width: 100%;
+  text-align: center;
 }
 
-header nav ul li:hover {
-  background-color: #333; /* Ajouter la couleur de fond au <li> lors du survol */
-}
-
+header nav ul li:hover,
 header nav ul li:hover a {
+  text-decoration: none;
   color: #fff;
+  background-color: #333;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  color: #111;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  padding-top: 20px;
+  display: none;
 }
 
 /* DROPDOWN */
 
-.dropdown {
-  position: relative; /* Positionner relativement pour que le contenu du dropdown soit positionné absolument par rapport à lui */
-  margin-left: auto; /* Déplacer "Code Snippet" vers la droite */
-}
-
 .dropbtn {
   display: block;
-  font-family: Catamaran;
+  font-family: 'Catamaran', sans-serif;
   background-color: #fff;
   color: #111;
   padding: 18px;
@@ -96,8 +119,15 @@ header nav ul li:hover a {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  line-height: 50px;
   width: 250px;
   text-align: left;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
 }
 
 .dropdown-content {
@@ -107,6 +137,8 @@ header nav ul li:hover a {
   min-width: 250px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  right: 0;
+  left: auto;
 }
 
 .dropdown-content a {
@@ -118,8 +150,9 @@ header nav ul li:hover a {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
-  color: #333;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
 }
 
 .dropdown:hover .dropdown-content {
@@ -130,8 +163,6 @@ header nav ul li:hover a {
   color: #fff;
   background-color: #333;
 }
-
-
 
 
 /* TABLE OF CONTENTS */
