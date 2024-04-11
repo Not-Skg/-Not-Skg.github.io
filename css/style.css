@@ -145,20 +145,19 @@ header nav ul li:hover a{
   display: block;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd; /* changer la couleur de fond en gris lorsque la souris est sur l'onglet */
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #ddd; /* changer la couleur de fond en gris lorsque la souris est sur l'onglet */
+}
+
+.dropdown:hover .dropdown-content a {
   color: #333; /* changer la couleur du texte en noir lorsque la souris est sur l'onglet */
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .dropdown:hover .dropbtn {
-    color: #fff;
-    background-color: #333;
+    color: #111; /* Ne pas changer la couleur du texte du bouton dropdown lorsque la souris est sur l'onglet */
+    background-color: #fff; /* Ne pas changer la couleur de fond du bouton dropdown lorsque la souris est sur l'onglet */
 }
-
 
 /* TABLE OF CONTENTS */
 
