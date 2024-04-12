@@ -308,7 +308,13 @@ pre {
   margin-bottom: 15px;
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-out; /* Ajouter une transition pour la propriété transform */
 }
+
+.collapsible.active {
+  transform: scale(1.05); /* Augmenter légèrement la taille du collapsible actif */
+}
+
 .collapsible-header {
   background-color: #fff;
   color: #333;
