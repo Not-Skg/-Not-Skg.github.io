@@ -12,3 +12,8 @@
   justify-content: flex-end;
   align-items: flex-start;
 }
+
+
+.tryhackme-badge {
+  margin-top: 20px; /* Ajuster la valeur en fonction de vos besoins */
+}
