@@ -376,15 +376,12 @@ pre {
   content: "\2212";
 }
 
-/* Ajouter ce bloc pour centrer le code à l'intérieur des collapsibles */
 .collapsible-content pre {
-  display: inline-block;
-  margin: 0 auto;
+  text-align: center;
 }
 
-/* Ajouter ce bloc pour que le code soit affiché correctement */
-.collapsible-content code {
-  display: block;
-  white-space: pre;
+.collapsible-content pre code {
+  display: inline-block;
   text-align: left;
 }
+
