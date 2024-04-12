@@ -350,6 +350,7 @@ header nav ul li:hover a{
 
 .code-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
