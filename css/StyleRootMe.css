@@ -3,6 +3,7 @@
   background: url("../img/RootBanner.png");
   min-height: 50vh;
   position: relative;
+  top: -20px;
   
   background-attachment: fixed;
   background-position: center;
