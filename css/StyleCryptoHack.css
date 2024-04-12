@@ -1,0 +1,11 @@
+/* BANNER */
+.banner-container {
+  background: url("../img/CryptoHackBanner.png");
+  min-height: 50vh;
+  position: relative;
+  overflow: hidden; /* Cacher tout ce qui dépasse */
+  background-attachment: fixed;
+  background-position: center -200px; /* Ajuster la position de l'image */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
