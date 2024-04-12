@@ -308,9 +308,11 @@ pre {
   margin-bottom: 15px;
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-out; /* Ajouter une transition pour la propriété transform */
+  transition: transform 0.3s ease-out;
+  width: 100%; /* Largeur initiale à 100% */
+  min-width: 80%; /* Largeur minimale à 80% */
+  box-sizing: border-box; /* Inclure la bordure et le remplissage dans la largeur totale */
 }
-
 .collapsible.active {
   transform: scale(1.05); /* Augmenter légèrement la taille du collapsible actif */
 }
