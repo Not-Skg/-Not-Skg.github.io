@@ -288,8 +288,10 @@ header nav ul li:hover a{
   margin-left: 42%;
 }
 /* Code Container and Explanation */
+
 .code-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
@@ -338,10 +340,8 @@ pre {
   position: relative;
   z-index: 1;
 }
-
 .collapsible-content.show {
   max-height: 500px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1;
@@ -349,8 +349,6 @@ pre {
   margin-bottom: 10px;
   border-radius: 5px;
 }
-
-
 .collapsible-content.show + .collapsible-header::after {
   content: "\2212";
 }
