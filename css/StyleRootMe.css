@@ -3,10 +3,9 @@
   background: url("../img/RootBanner.png");
   min-height: 50vh;
   position: relative;
-  top: -20px;
-  
+  overflow: hidden; /* Cacher tout ce qui dépasse */
   background-attachment: fixed;
-  background-position: center;
+  background-position: center top; /* Ajuster la position de l'image */
   background-repeat: no-repeat;
   background-size: cover;
 }
