@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
   // Sélectionner tous les éléments collapsible
   const collapsibles = document.querySelectorAll('.collapsible');
 
-  // Ajouter un gestionnaire d'événements de clic à chaque élément collapsible
+  // Ajouter un gestionnaire d'événements de clic à chaque élément collapsible header
   collapsibles.forEach(collapsible => {
-    collapsible.addEventListener('click', function() {
+    collapsible.querySelector('.collapsible-header').addEventListener('click', function() {
       // Fermer tous les autres collapsibles
       collapsibles.forEach(otherCollapsible => {
         if (otherCollapsible !== collapsible) {
