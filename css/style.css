@@ -409,3 +409,11 @@ pre {
 .collapsible-content.show + .collapsible-header::after {
   content: "\2212";
 }
+
+.collapsible.active .collapsible-content {
+  max-height: 500px;
+}
+
+.collapsible.active .collapsible-header::after {
+  content: "\2212";
+}
