@@ -286,7 +286,7 @@ header nav ul li:hover a{
   font-size: 24px;
   color: #333;
   margin-bottom: 10px;
-  text-align:center;
+  text-align:left;
 }
 
 .toc ol li a {
@@ -315,6 +315,10 @@ header nav ul li:hover a{
 
 .tryhackme-toc ol ol {
   padding-left: 20px;
+}
+
+.tryhackme-toc li {
+  text-align:center;
 }
 
 
