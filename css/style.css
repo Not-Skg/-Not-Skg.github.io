@@ -331,7 +331,10 @@ header nav ul li:hover a{
   font-weight: normal;
 }
 
-
-
-
+/* Sélectionne la barre horizontale entre les sections et ajuste les marges */
+.toc hr:nth-of-type(2) {
+  margin-bottom: 0em;
+  width: 20%;
+  margin-left: 42%;
+}
 
