@@ -1,5 +1,5 @@
-document.querySelectorAll('.header').forEach(function(header) {
-  header.addEventListener('click', function() {
-    this.parentNode.classList.toggle('open');
-  });
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.collapsible');
+  var instances = M.Collapsible.init(elems, options);
 });
+
