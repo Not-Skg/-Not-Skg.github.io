@@ -345,3 +345,12 @@ header nav ul li:hover a{
   margin-left: 42%;
 }
 
+
+
+
+pre {
+  max-width: 80%;
+  margin: 0 auto; /* centrer horizontalement le bloc de code */
+}
+
+
