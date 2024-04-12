@@ -363,57 +363,21 @@ pre {
 
 /* Collapsible */
 
-.accordion-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.accordion-item {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  overflow: hidden;
-}
-
-.accordion-header {
-  background-color: #f2f2f2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+.header {
   cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
 }
 
-.accordion-header h2 {
-  margin: 0;
+.content {
+  display: none;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-.accordion-icon {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #666;
-  transition: transform 0.3s ease;
+.open .content {
+  display: block;
 }
 
-.accordion-item.active .accordion-icon {
-  transform: rotate(180deg);
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  padding: 0 20px;
-}
-
-.accordion-item.active .accordion-content {
-  max-height: 500px;
-  padding: 20px;
-}
-
-.accordion-content p {
-  margin: 0;
-}
