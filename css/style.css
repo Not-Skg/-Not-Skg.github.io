@@ -301,34 +301,36 @@ header nav ul li:hover a{
   border-radius: 5px;
 }
 
+
 /* Sélectionne la liste ordonnée principale et la centre horizontalement */
-.tryhackme-toc {
+.my-toc {
   display: inline-block;
   margin: 0 auto;
   text-align: left;
 }
 
 /* Sélectionne tous les éléments de liste imbriqués et les décale vers la droite */
-.tryhackme-toc ol ol {
+.my-toc ol ol {
   margin-left: 20px;
 }
 
 /* Sélectionne tous les liens et supprime la décoration de soulignement */
-.tryhackme-toc a {
+.my-toc a {
   text-decoration: none;
 }
 
 /* Sélectionne les sous-titres de niveau 2 et applique un style spécifique */
-.tryhackme-toc li h2 {
+.my-toc li h2 {
   font-size: 1.5em;
   font-weight: bold;
 }
 
 /* Sélectionne les sous-titres de niveau 3 et applique un style spécifique */
-.tryhackme-toc li li a {
+.my-toc li li a {
   font-size: 1.2em;
   font-weight: normal;
 }
+
 
 
 
