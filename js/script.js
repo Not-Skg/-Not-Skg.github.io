@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $('.accordion-header').click(function() {
-    $(this).parent().toggleClass('active');
+document.querySelectorAll('.header').forEach(function(header) {
+  header.addEventListener('click', function() {
+    this.parentNode.classList.toggle('open');
   });
 });
