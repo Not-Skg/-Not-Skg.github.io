@@ -4,6 +4,13 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
+h1 {
+  font-size: 2em;
+  color: #008000;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
 /* Utiliser la police Georgia pour les notes */
 [role="note"] {
   font-family: Georgia, serif;
