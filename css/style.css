@@ -287,19 +287,6 @@ header nav ul li:hover a{
   width: 20%;
   margin-left: 42%;
 }
-/* Code Container and Explanation */
-
-.code-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
-}
-
-
-
 
 /* Code Container and Explanation */
 
@@ -385,6 +372,8 @@ pre {
 .collapsible-content pre {
   display: inline-block;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .collapsible-content code {
