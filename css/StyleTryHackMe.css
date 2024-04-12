@@ -8,6 +8,7 @@
   background-position: center -140px; /* Ajuster la position de l'image */
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
-
-
