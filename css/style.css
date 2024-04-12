@@ -348,6 +348,9 @@ header nav ul li:hover a{
 
 /* Code Container and Explanation */
 .code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   margin: 0 auto;
 }
