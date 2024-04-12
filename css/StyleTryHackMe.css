@@ -14,6 +14,6 @@
 }
 
 
-.tryhackme-badge {
-  margin-top: 20px; /* Ajuster la valeur en fonction de vos besoins */
+.banner-container > * {
+  margin-top: 20px; /* Ajuster la valeur selon vos besoins */
 }
