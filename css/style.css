@@ -286,7 +286,7 @@ header nav ul li:hover a{
   font-size: 24px;
   color: #333;
   margin-bottom: 10px;
-  text-align: left;
+  text-align:center;
 }
 
 .toc ol li a {
