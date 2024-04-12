@@ -366,3 +366,16 @@ pre {
 .collapsible.active .collapsible-header::after {
   content: "\2212";
 }
+
+
+.collapsible-content pre {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.collapsible-content code {
+  display: block;
+  white-space: pre;
+  text-align: left;
+}
+
