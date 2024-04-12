@@ -297,10 +297,7 @@ header nav ul li:hover a{
   width: 80%;
   margin: 0 auto;
 }
-pre {
-  width: 80%;
-  margin: 0 auto; /* centrer horizontalement le bloc de code */
-}
+
 
 /* Collapsible */
 .collapsible {
@@ -347,7 +344,6 @@ pre {
 
 .collapsible-content {
   padding: 0 18px;
-  max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
   position: relative;
@@ -368,16 +364,10 @@ pre {
   content: "\2212";
 }
 
-.collapsible.active .collapsible-content {
-  max-height: 500px;
-}
+
 
 .collapsible.active .collapsible-header::after {
   content: "\2212";
-}
-
-.collapsible-content pre {
-  text-align: center;
 }
 
 .collapsible-content pre code {
