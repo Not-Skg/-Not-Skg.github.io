@@ -16,5 +16,6 @@
 
 .banner-container > * {
   margin-top: 20px; /* Ajuster la valeur selon vos besoins */
-  margin-right: 5px
+  margin-right: 5px;
+  transform: scale(1.5);
 }
