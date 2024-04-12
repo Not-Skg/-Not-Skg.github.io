@@ -302,6 +302,13 @@ pre {
   width: 80%;
   margin: 0 auto; /* centrer horizontalement le bloc de code */
 }
+
+.code-container h2 {
+  text-align: left;
+  width: 100%;
+}
+
+
 /* Collapsible */
 .collapsible {
   border: none;
