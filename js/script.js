@@ -11,8 +11,15 @@ for (let i = 0; i < coll.length; i++) {
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
     }
+    var sign = this.querySelector('.collapsible-header::after');
+    if (this.classList.contains('active')) {
+      sign.content = "\2212";
+    } else {
+      sign.content = "\002B";
+    }
   });
 }
+
 
           
 });
