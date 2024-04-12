@@ -346,11 +346,21 @@ header nav ul li:hover a{
 }
 
 
-
-
+/* Code Container and Explanation */
+.code-container {
+  width: 80%;
+  margin: 0 auto;
+}
 pre {
   max-width: 80%;
   margin: 0 auto; /* centrer horizontalement le bloc de code */
 }
 
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
