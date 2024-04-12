@@ -16,6 +16,6 @@
 
 .banner-container > * {
   margin-top: 2%; /* Ajuster la valeur selon vos besoins */
-  margin-right: 3%;
+  margin-right: 4%;
   transform: scale(1.5);
 }
