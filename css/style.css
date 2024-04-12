@@ -347,6 +347,7 @@ header nav ul li:hover a{
 
 
 /* Code Container and Explanation */
+
 .code-container {
   display: flex;
   justify-content: center;
@@ -360,3 +361,25 @@ pre {
 }
 
 
+/* Collapsible */
+
+details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details[open] summary {
+  color: #333;
+}
+
+details p {
+  margin: 0;
+  padding: 10px;
+}
