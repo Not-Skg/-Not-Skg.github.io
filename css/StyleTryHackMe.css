@@ -9,3 +9,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.banner-image {
+  position: absolute;
+  top: 10px; /* Ajuster la distance du haut */
+  right: 10px; /* Ajuster la distance de la droite */
+  width: 100px; /* Ajuster la largeur de l'image */
+  height: auto; /* Conserver le rapport hauteur/largeur de l'image */
+}
