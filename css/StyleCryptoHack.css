@@ -1,6 +1,6 @@
 /* BANNER */
 .banner-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/CryptoHackBanner.png");
+  background: #0D1321 url("../img/CryptoHackBanner.png");
   min-height: 50vh;
   position: relative;
   overflow: hidden; /* Cacher tout ce qui dépasse */
@@ -8,4 +8,5 @@
   background-position: center -150px; /* Ajuster la position de l'image */
   background-repeat: no-repeat;
   background-size: contain; /* Ajuster la taille de l'image */
+  background-blend-mode: multiply; /* Mélanger l'image avec la couleur d'arrière-plan */
 }
