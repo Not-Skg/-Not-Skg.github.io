@@ -1,12 +1,12 @@
 /* BANNER */
 .banner-container {
-  background: #0D1321 url("../img/CryptoHackBanner.png");
-  min-height: 50vh;
-  position: relative;
-  overflow: hidden; /* Cacher tout ce qui dépasse */
-  background-attachment: fixed;
+  background-color: #0D1321; /* Ajouter une couleur d'arrière-plan */
+  background-image: url("../img/CryptoHackBanner.png"); /* Ajouter une image d'arrière-plan */
   background-position: center -150px; /* Ajuster la position de l'image */
   background-repeat: no-repeat;
   background-size: contain; /* Ajuster la taille de l'image */
-  background-blend-mode: multiply; /* Mélanger l'image avec la couleur d'arrière-plan */
+  min-height: 50vh;
+  position: relative;
+  overflow: hidden; /* Cacher tout ce qui dépasse */
 }
+
