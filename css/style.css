@@ -358,8 +358,8 @@ pre {
   position: relative;
   z-index: 1;
   display: flex; /* Ajouter display: flex */
-  align-items: center; /* Centrer verticalement */
-  justify-content: center; /* Centrer horizontalement */
+  flex-direction: column; /* Aligner le contenu en colonne */
+  align-items: center; /* Centrer horizontalement le contenu */
 }
 
 .collapsible-content.show {
@@ -385,7 +385,6 @@ pre {
 }
 
 .collapsible-content pre {
-  text-align: left; /* Assurez-vous que le texte à l'intérieur de l'élément pre est aligné à gauche */
+  margin: 0 auto; /* Centrer horizontalement l'élément pre */
 }
-
 
