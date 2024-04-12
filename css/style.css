@@ -313,6 +313,7 @@ pre {
   min-width: 80%; /* Largeur minimale à 80% */
   box-sizing: border-box; /* Inclure la bordure et le remplissage dans la largeur totale */
 }
+
 .collapsible.active {
   transform: scale(1.05); /* Augmenter légèrement la taille du collapsible actif */
 }
@@ -330,9 +331,11 @@ pre {
   font-size: 24px;
   font-weight: bold;
 }
+
 .collapsible-header:hover {
   background-color: #ddd;
 }
+
 .collapsible-header::after {
   content: '\002B';
   color: #777;
@@ -340,6 +343,7 @@ pre {
   float: right;
   margin-left: 5px;
 }
+
 .collapsible-content {
   padding: 0 18px;
   max-height: 0;
@@ -348,6 +352,7 @@ pre {
   position: relative;
   z-index: 1;
 }
+
 .collapsible-content.show {
   max-height: 500px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -357,22 +362,26 @@ pre {
   margin-bottom: 10px;
   border-radius: 5px;
 }
+
 .collapsible-content.show + .collapsible-header::after {
   content: "\2212";
 }
+
 .collapsible.active .collapsible-content {
   max-height: 500px;
 }
+
 .collapsible.active .collapsible-header::after {
   content: "\2212";
 }
 
-
+/* Ajouter ce bloc pour centrer le code à l'intérieur des collapsibles */
 .collapsible-content pre {
   display: inline-block;
   margin: 0 auto;
 }
 
+/* Ajouter ce bloc pour que le code soit affiché correctement */
 .collapsible-content code {
   display: block;
   white-space: pre;
