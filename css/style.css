@@ -355,7 +355,6 @@ header nav ul li:hover a{
   margin: 0 auto;
 }
 pre {
-  max-width: 80%;
   margin: 0 auto; /* centrer horizontalement le bloc de code */
 }
 
