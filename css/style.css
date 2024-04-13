@@ -360,7 +360,7 @@ pre {
 }
 .collapsible-header::after {
   content: '\002B';
-  color: #777;
+  color: #333;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -390,6 +390,7 @@ pre {
 }
 .collapsible.active .collapsible-header::after {
   content: "\2212";
+  color: #fff;
 }
 
 
