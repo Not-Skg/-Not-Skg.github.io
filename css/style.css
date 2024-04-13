@@ -429,11 +429,10 @@ body.dark-mode .collapsible-content.show {
   box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2); /* Change shadow color to white */
 }
 
-/* Collapsible header styles in dark mode */
-body.dark-mode .collapsible.active .collapsible-header {
-  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2); /* Add white shadow to header */
+/* Collapsible styles in dark mode */
+body.dark-mode .collapsible.active {
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2); /* Add white shadow to collapsible */
 }
-
 
 
 /* Back to top Button */
