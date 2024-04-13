@@ -5,7 +5,7 @@
   position: relative;
   overflow: hidden; /* Cacher tout ce qui dépasse */
   background-attachment: fixed;
-  background-position: center center; /* Centrer l'image horizontalement et verticalement */
+  background-position: center -20%; /* Centrer l'image horizontalement et verticalement */
   background-repeat: no-repeat;
   background-size: contain; /* Adapter l'image à la hauteur de 50vh sans la couper */
   display: flex;
