@@ -434,6 +434,13 @@ body:not(.dark-mode) .collapsible-content.show {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Change shadow color to black */
 }
 
+.collapsible:hover .collapsible-header::after {
+  color: #fff;
+}
+
+
+
+
 /* Back to top Button */
 #button {
   display: inline-block;
