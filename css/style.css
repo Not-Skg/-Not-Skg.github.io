@@ -509,10 +509,13 @@ body.dark-mode {
 /* Toggle switch styles */
 .switch {
   position: relative;
-  display: inline-block;
+  display: block;
+  float: right;
   width: 60px;
   height: 34px;
 }
+
+
 
 .switch input {
   opacity: 0;
