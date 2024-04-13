@@ -419,7 +419,7 @@ pre {
   width: 50px;
   height: 50px;
   text-align: center;
-  border-radius: 50%; /* changer le rayon de bordure en 50% pour créer un cercle */
+  border-radius: 50%; /* change le bord du bouton en cercle */
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -427,18 +427,17 @@ pre {
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
+  line-height: 50px; /* centre le chevron verticalement */
 }
 
 #button::after {
   content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.5em; /* réduire la taille de l'icône */
-  line-height: 50px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px; /* change la taille du chevron */
+  line-height: 50px; /* centre le chevron horizontalement */
   color: #fff;
-  display: block; /* afficher l'icône comme un bloc pour centrer verticalement */
-  margin-top: 8px; /* ajouter une marge supérieure pour centrer verticalement l'icône */
+  text-decoration: none; /* enlève le soulignement du chevron */
 }
 
 #button:hover {
