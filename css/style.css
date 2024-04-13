@@ -442,10 +442,11 @@ body.dark-mode .code-container h2 {
 .collapsible:hover .collapsible-header::after {
   color: #fff;
 }
-body.dark-mode .collapsible-content {
-  background-color: #333;
-  color: #fff;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Add white shadow */
+
+
+/* Collapsible content styles in dark mode */
+body.dark-mode .collapsible-content.show {
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2); /* Change shadow color to white */
 }
 
 /* Back to top Button */
