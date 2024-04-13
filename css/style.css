@@ -215,7 +215,7 @@ header nav ul li:hover a{
   width: 100%;
 }
 .toc h1 {
-  font-family: 'Georgia', serif;
+  font-family: 'Georgia, serif;
   font-weight: 700;
   font-style: normal;
   font-size: 36px;
@@ -241,16 +241,16 @@ header nav ul li:hover a{
   padding-left: 20px;
 }
 .toc ol li {
-  font-family: 'Merriweather', serif;
+  font-family: 'merriweather-regular';
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
-  color: #333; /* Change this to the desired text color */
+  color: #333;
   margin-bottom: 10px;
   text-align:left;
 }
 .toc ol li a {
-  color: #333; /* Change this to the desired link text color */
+  color: #333;
   text-decoration: none;
 }
 .toc ol li a:hover {
@@ -289,6 +289,21 @@ header nav ul li:hover a{
   width: 20%;
   margin-left: 42%;
 }
+
+/* Dark mode styles for TOC */
+body.dark-mode .toc ol li {
+  color: #fff;
+}
+
+body.dark-mode .toc ol li a {
+  color: #fff;
+}
+
+body.dark-mode .toc ol li a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
 
 /* Code Container and Explanation */
 
