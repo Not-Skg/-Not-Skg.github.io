@@ -413,9 +413,10 @@ pre {
 
 
 /* Back to top Button */
+/* Back to top Button */
 #button {
   display: inline-block;
-  background-color: #FF9800;
+  background-color: #fff; /* change la couleur de fond du cercle en blanc */
   width: 50px;
   height: 50px;
   text-align: center;
@@ -437,12 +438,16 @@ pre {
   font-weight: 900;
   font-size: 20px; /* change la taille du chevron */
   line-height: 50px; /* centre le chevron horizontalement */
-  color: #fff;
+  color: #000; /* change la couleur du chevron en noir */
 }
 
 #button:hover {
   cursor: pointer;
-  background-color: #333;
+  background-color: #333; /* change la couleur de fond du cercle en noir au survol */
+}
+
+#button:hover::after {
+  color: #fff; /* change la couleur du chevron en blanc au survol */
 }
 
 #button:active {
