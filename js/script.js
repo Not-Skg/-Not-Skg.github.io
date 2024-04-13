@@ -46,12 +46,20 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 // TOGGLE SWITCH
-    // Sélectionnez le bouton de bascule de thème
-  const themeToggle = document.querySelector(".theme-toggle");
+const darkModeSwitch = document.querySelector('#darkModeSwitch');
 
-  // Ajoutez un gestionnaire d'événements de clic au bouton de bascule de thème
-  themeToggle.addEventListener("click", function () {
-    // Basculer entre les classes de thème clair et sombre sur l'élément body
-    document.body.classList.toggle("dark-theme");
-  });
+// Vérifier les préférences de l'utilisateur en matière de mode sombre
+const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+// Définir le mode par défaut en fonction des préférences de l'utilisateur
+if (prefersDarkMode) {
+  document.body.classList.add('dark-mode');
+  darkModeSwitch.checked = true;
+}
+
+// Ajouter un gestionnaire d'événements pour basculer entre les modes light et dark
+darkModeSwitch.addEventListener('change', function() {
+  document.body.classList.toggle('dark-mode');
+});
+  
 });
