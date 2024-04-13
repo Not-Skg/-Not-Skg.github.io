@@ -44,4 +44,14 @@ document.addEventListener("DOMContentLoaded", function() {
       behavior: 'smooth'
     });
   });
+
+// TOGGLE SWITCH
+    // Sélectionnez le bouton de bascule de thème
+  const themeToggle = document.querySelector(".theme-toggle");
+
+  // Ajoutez un gestionnaire d'événements de clic au bouton de bascule de thème
+  themeToggle.addEventListener("click", function () {
+    // Basculer entre les classes de thème clair et sombre sur l'élément body
+    document.body.classList.toggle("dark-theme");
+  });
 });
