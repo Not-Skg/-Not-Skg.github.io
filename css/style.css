@@ -438,7 +438,7 @@ body:not(.dark-mode) .collapsible-content.show {
   color: #fff;
 }
 
-body.dark-mode .collapsible.active .collapsible-content {
+body.dark-mode .collapsible.active .collapsible {
   box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
 }
 
