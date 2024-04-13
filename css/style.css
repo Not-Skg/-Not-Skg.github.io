@@ -329,6 +329,19 @@ pre {
   transform: scale(1.05); /* Augmenter légèrement la taille du collapsible actif */
 }
 
+/* Ajoutez la couleur de fond et la couleur de texte pour les entêtes de collapsibles cliqués */
+.collapsible.active .collapsible-header {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Ajoutez la couleur de fond et la couleur de texte pour les entêtes de collapsibles survolés */
+.collapsible:hover .collapsible-header {
+  background-color: #333;
+  color: #fff;
+}
+
+
 .collapsible-header {
   background-color: #fff;
   color: #333;
