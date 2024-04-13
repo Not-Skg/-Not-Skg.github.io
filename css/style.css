@@ -571,43 +571,52 @@ input:checked + .slider:before {
 
 /* ----- DARK MODE ----- */
 body.dark {
-  --bg-color: #33
-
-3;
-color: #fff;
-background-color: #333;
+  --bg-color: #333;
+  --text-color: #fff;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 body.dark a {
-color: #ccc;
+  color: #ccc;
 }
 
 body.dark .header-brand {
-color: #fff;
+  color: #fff;
 }
 
 body.dark .dropdown-content a {
-background-color: #555;
+  background-color: #555;
 }
 
 body.dark .collapsible-header {
-background-color: #555;
-color: #fff;
+  background-color: #555;
+  color: #fff;
 }
 
-body.dark .collapsible-header {
-background-color: #666;
+body.dark .collapsible-header:hover {
+  background-color: #666;
 }
 
 body.dark .collapsible-content {
-background-color: #444;
-color: #fff;
+  background-color: #444;
+  color: #fff;
 }
 
 body.dark .collapsible-content pre {
-background-color: #333;
+  background-color: #333;
 }
 
 body.dark footer {
-background-color: #555;
+  background-color: #555;
+}
+
+/* Table des matières */
+body.dark .toc ol li a {
+  color: #fff;
+}
+
+/* En-tête */
+body.dark header {
+  background-color: #333;
 }
