@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-
   // Sélectionner tous les éléments collapsible
   const collapsibles = document.querySelectorAll('.collapsible');
 
@@ -25,21 +24,24 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+  // Sélectionner le bouton back to top
+  const btn = document.querySelector('#button');
 
-// SBack to top button
-var btn = $('#button');
+  // Ajouter un gestionnaire d'événements de défilement à la fenêtre
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      btn.classList.add('show');
+    } else {
+      btn.classList.remove('show');
+    }
+  });
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
-
+  // Ajouter un gestionnaire d'événements de clic au bouton back to top
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 });
