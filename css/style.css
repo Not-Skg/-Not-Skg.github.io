@@ -428,6 +428,7 @@ pre {
   visibility: hidden;
   z-index: 1000;
   line-height: 50px; /* centre le chevron verticalement */
+  text-decoration: none; /* enlève le soulignement du chevron */
 }
 
 #button::after {
