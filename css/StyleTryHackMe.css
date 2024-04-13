@@ -5,13 +5,14 @@
   position: relative;
   overflow: hidden; /* Cacher tout ce qui dépasse */
   background-attachment: fixed;
-  background-position: center -80%; /* Ajuster la position de l'image */
+  background-position: center center; /* Centrer l'image horizontalement et verticalement */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain; /* Adapter l'image à la hauteur de 50vh sans la couper */
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
 }
+
 
 
 .banner-container > * {
