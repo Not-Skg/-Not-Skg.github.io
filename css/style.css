@@ -607,12 +607,6 @@ footer .social-links a {
   transition: color .3s;
 }
 
-
-
-
-ansform: translateX(26px);
-}
-
 footer .social-links a:hover {
   color: #FF9800;
 }
