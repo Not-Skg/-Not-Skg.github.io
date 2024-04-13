@@ -338,6 +338,11 @@ body.dark-mode code {
   color: #fff;
 }
 
+/* Dark mode styles for code container title */
+body.dark-mode .code-container h2 {
+  color: #fff;
+}
+
 
 /* Collapsible */
 .collapsible {
