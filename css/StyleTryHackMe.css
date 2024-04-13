@@ -1,13 +1,12 @@
 /* BANNER */
 .banner-container {
   background: url("../img/TryHackMeBanner.png");
+  background-position: center ; /* Ajuster la position de l'image */
+  background-repeat: no-repeat;
+  background-size: contain; /* Ajuster la taille de l'image */
   min-height: 50vh;
   position: relative;
   overflow: hidden; /* Cacher tout ce qui dépasse */
-  background-attachment: fixed;
-  background-position: center -80%; /* Centrer l'image horizontalement et verticalement */
-  background-repeat: no-repeat;
-  background-size: contain; /* Adapter l'image à la hauteur de 50vh sans la couper */
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
