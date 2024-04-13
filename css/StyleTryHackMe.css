@@ -5,7 +5,7 @@
   position: relative;
   overflow: hidden; /* Cacher tout ce qui dépasse */
   background-attachment: fixed;
-  background-position: 50% 140%; /* Ajuster la position de l'image */
+  background-position: center -20%; /* Ajuster la position de l'image */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
