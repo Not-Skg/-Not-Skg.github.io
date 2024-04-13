@@ -511,6 +511,7 @@ body.dark-mode {
   position: relative;
   display: block;
  /* float: right;*/
+  padding-right: 70px;
   width: 60px;
   height: 34px;
 }
