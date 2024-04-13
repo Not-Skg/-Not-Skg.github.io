@@ -535,6 +535,7 @@ body.dark-mode {
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
+  border-radius: 34px; /* Add border-radius to make it round */
 }
 
 .slider:before {
@@ -547,6 +548,7 @@ body.dark-mode {
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
+  border-radius: 50%; /* Add border-radius to make it circular */
 }
 
 input:checked + .slider {
@@ -562,7 +564,6 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
 
 footer .social-links a:hover {
   color: #FF9800;
