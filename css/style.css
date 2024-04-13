@@ -306,7 +306,6 @@ body.dark-mode .toc ol li a:hover {
 
 
 /* Code Container and Explanation */
-
 .code-container {
   display: flex;
   flex-direction: column;
@@ -326,7 +325,17 @@ pre {
   font-size: 36px;
   font-weight: 900;
   color: #333;
-  
+}
+
+/* Dark mode styles for code container */
+body.dark-mode pre {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode code {
+  background-color: #333;
+  color: #fff;
 }
 
 
@@ -513,7 +522,7 @@ footer .social-links a {
 
 
 
-/* DTOGGLE SWITCH */
+/* TOGGLE SWITCH */
 
 
 /* Default/light mode styles */
