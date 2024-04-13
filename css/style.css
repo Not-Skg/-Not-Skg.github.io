@@ -510,7 +510,7 @@ body.dark-mode {
 .switch {
   position: relative;
   display: block;
-  float: right;
+ /* float: right;*/
   width: 60px;
   height: 34px;
 }
