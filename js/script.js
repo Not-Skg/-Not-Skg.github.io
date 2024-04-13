@@ -45,21 +45,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-// TOGGLE SWITCH
-const darkModeSwitch = document.querySelector('#darkModeSwitch');
+  // TOGGLE SWITCH
+  const darkModeSwitch = document.querySelector('#darkModeSwitch');
 
-// Vérifier les préférences de l'utilisateur en matière de mode sombre
-const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  // Ajouter un gestionnaire d'événements pour basculer entre les modes light et dark
+  darkModeSwitch.addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode');
+  });
 
-// Définir le mode par défaut en fonction des préférences de l'utilisateur
-if (prefersDarkMode) {
-  document.body.classList.add('dark-mode');
-  darkModeSwitch.checked = true;
-}
-
-// Ajouter un gestionnaire d'événements pour basculer entre les modes light et dark
-darkModeSwitch.addEventListener('change', function() {
-  document.body.classList.toggle('dark-mode');
-});
-  
 });
