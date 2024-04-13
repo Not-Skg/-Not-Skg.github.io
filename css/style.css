@@ -493,6 +493,43 @@ footer .social-links a {
   transition: color .3s;
 }
 
+
+/* Toggle switch */
+
+
+
+/* Ajoutez les styles pour le bouton de bascule de thème */
+.theme-toggle {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.theme-toggle i {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Définissez le thème clair par défaut */
+body {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Définissez le thème sombre */
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Changez la couleur de l'icône du soleil en mode sombre */
+body.dark-theme .theme-toggle .fa-sun {
+  color: #fff;
+}
+
 footer .social-links a:hover {
   color: #FF9800;
 }
