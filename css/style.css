@@ -616,6 +616,14 @@ body.dark .toc ol li a {
   color: #fff;
 }
 
+body.dark .toc ol li h2 {
+  color: #fff;
+}
+
+body.dark .toc ol {
+  background-color: #444;
+}
+
 /* En-tête */
 body.dark header {
   background-color: #333;
