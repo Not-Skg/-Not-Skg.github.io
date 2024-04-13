@@ -44,29 +44,4 @@ document.addEventListener("DOMContentLoaded", function() {
       behavior: 'smooth'
     });
   });
-
-  const checkbox = document.querySelector('#checkbox');
-
-checkbox.addEventListener('change', function() {
-  if (this.checked) {
-    // Ajouter la classe "dark" au corps de la page
-    document.body.classList.add('dark');
-    // Enregistrer le mode sombre dans le stockage local
-    localStorage.setItem('theme', 'dark');
-  } else {
-    // Supprimer la classe "dark" du corps de la page
-    document.body.classList.remove('dark');
-    // Enregistrer le mode clair dans le stockage local
-    localStorage.setItem('theme', 'light');
-  }
-});
-
-// Vérifier le mode actuel au chargement de la page
-const theme = localStorage.getItem('theme');
-if (theme === 'dark') {
-  // S'il s'agit du mode sombre, activer l'interrupteur à bascule et ajouter la classe "dark" au corps de la page
-  checkbox.checked = true;
-  document.body.classList.add('dark');
-}
-
 });
