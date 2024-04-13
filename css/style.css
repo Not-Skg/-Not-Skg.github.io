@@ -413,41 +413,44 @@ pre {
 
 
 /* Back to top Button */
-
 #button {
   display: inline-block;
   background-color: #FF9800;
   width: 50px;
   height: 50px;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 50%; /* changer le rayon de bordure en 50% pour créer un cercle */
   position: fixed;
   bottom: 30px;
   right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
 }
+
 #button::after {
   content: "\f077";
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
-  font-size: 2em;
+  font-size: 1.5em; /* réduire la taille de l'icône */
   line-height: 50px;
   color: #fff;
+  display: block; /* afficher l'icône comme un bloc pour centrer verticalement */
+  margin-top: 8px; /* ajouter une marge supérieure pour centrer verticalement l'icône */
 }
+
 #button:hover {
   cursor: pointer;
   background-color: #333;
 }
+
 #button:active {
   background-color: #555;
 }
+
 #button.show {
   opacity: 1;
   visibility: visible;
 }
-
