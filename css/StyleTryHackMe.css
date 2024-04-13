@@ -6,6 +6,7 @@
   background-size: contain; /* Ajuster la taille de l'image */
   min-height: 50vh;
   position: relative;
+  background-color: #0D1321; /* Ajouter une couleur d'arrière-plan */
   overflow: hidden; /* Cacher tout ce qui dépasse */
   display: flex;
   justify-content: flex-end;
