@@ -438,7 +438,6 @@ pre {
   font-size: 20px; /* change la taille du chevron */
   line-height: 50px; /* centre le chevron horizontalement */
   color: #fff;
-  text-decoration: none; /* enlève le soulignement du chevron */
 }
 
 #button:hover {
