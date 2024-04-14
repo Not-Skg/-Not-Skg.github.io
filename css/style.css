@@ -310,6 +310,7 @@ body.dark-mode .dropbtn{
 /* Sélectionne tous les éléments de liste imbriqués et les décale vers la droite */
 .my-toc ol ol {
   margin-left: 20px;
+  max-width: 100%;
 }
 /* Sélectionne tous les liens et supprime la décoration de soulignement */
 .my-toc a {
