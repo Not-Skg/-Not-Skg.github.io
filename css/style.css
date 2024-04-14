@@ -225,7 +225,9 @@ body.dark-mode select {
 }
 
 
-
+body.dark-mode header nav ul li a {
+  color: #fff;  /*Changez cette valeur pour une couleur plus foncée */
+}
 
 
 
