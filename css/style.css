@@ -234,6 +234,16 @@ body.dark-mode dropdown-header{
   color: #fff;  /*Changez cette valeur pour une couleur plus foncée */
 }
 
+
+body.dark-mode header-brand {
+  border-right: 3px solid #fff;
+  color: #fff;  /*Changez cette valeur pour une couleur plus foncée */
+}
+
+
+
+
+
 /* TABLE OF CONTENTS */
 .toc {
   text-align: center;
