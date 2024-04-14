@@ -207,6 +207,11 @@ header nav ul li:hover a{
   }
 }
 
+body.dark-mode header {
+  background-color: #444; /* Changez cette valeur pour une couleur plus claire */
+}
+
+
 
 /* TABLE OF CONTENTS */
 .toc {
