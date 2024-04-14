@@ -446,6 +446,9 @@ body.dark-mode .collapsible-content.show {
   color: #fff;
 }
 
+.collapsible:hover .collapsible-header::after {
+  color: #fff;
+}
 
 
 
