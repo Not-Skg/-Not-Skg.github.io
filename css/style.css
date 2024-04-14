@@ -219,28 +219,28 @@ body.dark-mode pre {
 }
 
 /* Liste déroulante */
-body.dark-mode select {
+body.dark-mode .select {
   background-color: #444; /* Changez cette valeur pour une couleur plus claire */
   color: #fff;  /*Changez cette valeur pour une couleur plus foncée */
 }
 
 
-body.dark-mode header nav ul li a {
+body.dark-mode .header nav ul li a {
   color: #fff;  /*Changez cette valeur pour une couleur plus foncée */
 }
 
-body.dark-mode dropdown-header{
+body.dark-mode .dropdown-header{
   background-color: #444; /* Changez cette valeur pour une couleur plus claire */
   color: #fff;  /*Changez cette valeur pour une couleur plus foncée */
 }
 
 
-body.dark-mode header-brand {
+body.dark-mode .header-brand {
   border-right: 3px solid #fff;
   color: #fff;  /*Changez cette valeur pour une couleur plus foncée */
 }
 
-body.dark-mode dropbtn{
+body.dark-mode .dropbtn{
   background-color: #444; /* Changez cette valeur pour une couleur plus claire */
   color: #fff;  /*Changez cette valeur pour une couleur plus foncée */
 }
