@@ -346,6 +346,15 @@ body.dark-mode .toc ol li a:hover {
   color: #333;
 }
 
+.my-toc ol li a {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+
+
+
 
 /* Code Container and Explanation */
 .code-container {
