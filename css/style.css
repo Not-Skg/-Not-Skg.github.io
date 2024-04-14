@@ -296,7 +296,7 @@ body.dark-mode .dropbtn{
 .toc ol li a:hover {
   color: #fff;
   background-color: #333;
-  padding: 5px 10px;
+ /* padding: 5px 10px;*/
   border-radius: 5px;
 }
 /* Sélectionne la liste ordonnée principale et la centre horizontalement */
