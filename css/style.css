@@ -240,6 +240,10 @@ body.dark-mode header-brand {
   color: #fff;  /*Changez cette valeur pour une couleur plus foncée */
 }
 
+body.dark-mode dropbtn{
+  background-color: #444; /* Changez cette valeur pour une couleur plus claire */
+  color: #fff;  /*Changez cette valeur pour une couleur plus foncée */
+}
 
 
 
