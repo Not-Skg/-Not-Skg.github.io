@@ -348,8 +348,16 @@ body.dark-mode .toc ol li a:hover {
 
 .my-toc ol li a {
   display: inline-block;
-  width: calc(100% - 20px);
   padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.my-toc ol li a:hover {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
 }
 
 
