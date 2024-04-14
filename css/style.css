@@ -229,7 +229,10 @@ body.dark-mode header nav ul li a {
   color: #fff;  /*Changez cette valeur pour une couleur plus foncée */
 }
 
-
+body.dark-mode dropdown-header{
+  background-color: #444; /* Changez cette valeur pour une couleur plus claire */
+  color: #fff;  /*Changez cette valeur pour une couleur plus foncée */
+}
 
 /* TABLE OF CONTENTS */
 .toc {
