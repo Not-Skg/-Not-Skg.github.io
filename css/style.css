@@ -345,13 +345,17 @@ body.dark-mode .code-container h2 {
 
 
 
+
+
+
+
 /* Collapsible */
 .collapsible {
   border: none;
   overflow: hidden;
   margin-bottom: 15px;
   border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Ombre noire en mode clair */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Ombre noire en mode clair */
   transition: transform 0.3s ease-out;
   width: 100%; /* Largeur initiale à 100% */
   min-width: 80%; /* Largeur minimale à 80% */
@@ -360,7 +364,7 @@ body.dark-mode .code-container h2 {
 
 /* En mode sombre, on change la couleur de l'ombre en blanc */
 body.dark-mode .collapsible {
-  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1); /* Ombre blanche en mode sombre */
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2); /* Ombre blanche en mode sombre */
 }
 
 .collapsible.active {
