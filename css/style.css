@@ -214,13 +214,13 @@ body.dark-mode header {
 /* Code snippet */
 body.dark-mode pre {
   background-color: #444; /* Changez cette valeur pour une couleur plus claire */
-  /* color: #fff; Changez cette valeur pour une couleur plus foncée */
+  color: #fff; /*Changez cette valeur pour une couleur plus foncée */
 }
 
 /* Liste déroulante */
 body.dark-mode select {
   background-color: #444; /* Changez cette valeur pour une couleur plus claire */
-  /* color: #fff;  Changez cette valeur pour une couleur plus foncée */
+  color: #fff;  /*Changez cette valeur pour une couleur plus foncée */
 }
 
 
