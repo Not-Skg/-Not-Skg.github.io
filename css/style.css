@@ -373,6 +373,7 @@ body.dark-mode .code-container h2 {
   color: #fff;
 }
 
+/* Collapsible header styles in light mode */
 .collapsible-header {
   background-color: #fff;
   color: #333;
@@ -386,9 +387,22 @@ body.dark-mode .code-container h2 {
   font-size: 24px;
   font-weight: bold;
 }
+
+/* Collapsible header styles in dark mode */
+body.dark-mode .collapsible-header {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Collapsible header hover styles in dark mode */
+body.dark-mode .collapsible:hover .collapsible-header {
+  background-color: #444;
+}
+
 .collapsible-header:hover {
   background-color: #ddd;
 }
+
 .collapsible-header::after {
   content: '\002B';
   color: #333;
@@ -396,6 +410,7 @@ body.dark-mode .code-container h2 {
   float: right;
   margin-left: 5px;
 }
+
 .collapsible-content {
   padding: 0 18px;
   max-height: 0;
@@ -404,6 +419,7 @@ body.dark-mode .code-container h2 {
   position: relative;
   z-index: 1;
 }
+
 .collapsible-content.show {
   max-height: 500px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -413,33 +429,29 @@ body.dark-mode .code-container h2 {
   margin-bottom: 10px;
   border-radius: 5px;
 }
-.collapsible-content.show + .collapsible-header::after {
-  content: "\2212";
-}
-.collapsible.active .collapsible-content {
-  max-height: 500px;
-}
-.collapsible.active .collapsible-header::after {
-  content: "\2212";
-  color: #fff;
-}
 
 /* Collapsible content styles in dark mode */
 body.dark-mode .collapsible-content.show {
   box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2); /* Change shadow color to white */
 }
 
-/* Collapsible content styles in light mode */
-body:not(.dark-mode) .collapsible-content.show {
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Change shadow color to black */
+.collapsible-content.show + .collapsible-header::after {
+  content: "\2212";
 }
 
-.collapsible:hover .collapsible-header::after {
+.collapsible.active .collapsible-content {
+  max-height: 500px;
+}
+
+.collapsible.active .collapsible-header::after {
+  content: "\2212";
   color: #fff;
 }
 
-body.dark-mode .collapsible.active .collapsible-content {
-  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+/* Collapsible content styles in dark mode */
+body.dark-mode .collapsible-content {
+  background-color: #333;
+  color: #fff;
 }
 
 
