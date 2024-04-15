@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Sélectionner tous les éléments collapsible
   const collapsibles = document.querySelectorAll('.collapsible');
 
-  // Ajouter un gestionnaire d'événements de clic à chaque élément collapsible header
+
   collapsibles.forEach(collapsible => {
     collapsible.querySelector('.collapsible-header').addEventListener('click', function() {
       // Fermer tous les autres collapsibles
@@ -24,10 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  // Sélectionner le bouton back to top
   const btn = document.querySelector('#button');
 
-  // Ajouter un gestionnaire d'événements de défilement à la fenêtre
   window.addEventListener('scroll', function() {
     if (window.scrollY > 300) {
       btn.classList.add('show');
@@ -36,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // Ajouter un gestionnaire d'événements de clic au bouton back to top
   btn.addEventListener('click', function(e) {
     e.preventDefault();
     window.scrollTo({
@@ -48,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
   // TOGGLE SWITCH
   const darkModeSwitch = document.querySelector('#darkModeSwitch');
 
-  // Ajouter un gestionnaire d'événements pour basculer entre les modes light et dark
   darkModeSwitch.addEventListener('change', function() {
     document.body.classList.toggle('dark-mode');
   });
