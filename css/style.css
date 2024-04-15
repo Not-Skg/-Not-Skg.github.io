@@ -386,7 +386,7 @@ body.dark-mode .collapsible {
 }
 
 .collapsible.active {
-  transform: scale(1.05);
+  /*transform: scale(1.05);*/
 }
 
 /* Ajoutez la couleur de fond et la couleur de texte pour les entêtes de collapsibles cliqués */
