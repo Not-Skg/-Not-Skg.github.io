@@ -487,6 +487,12 @@ body.dark-mode .collapsible {
   margin-bottom: 10px;
   border-radius: 5px;
 }
+.collapsible-content img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  /* autres styles pour l'élément img */
+}
 
 /* En mode sombre, on change la couleur de l'ombre en blanc */
 body.dark-mode .collapsible-content.show {
