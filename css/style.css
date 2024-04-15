@@ -384,11 +384,13 @@ body.dark-mode .collapsible {
 }
 .collapsible.active {
   transform: scale(1.05); /* Augmenter légèrement la taille du collapsible actif */
+  padding: 20px;
 }
 /* Ajoutez la couleur de fond et la couleur de texte pour les entêtes de collapsibles cliqués */
 .collapsible.active .collapsible-header {
   background-color: #333;
   color: #fff;
+  padding: 18px 20px;
 }
 /* Ajoutez la couleur de fond et la couleur de texte pour les entêtes de collapsibles survolés */
 .collapsible:hover .collapsible-header {
@@ -443,7 +445,8 @@ body.dark-mode .collapsible-content.show {
   content: "\2212";
 }
 .collapsible.active .collapsible-content {
-  max-height: 500px;
+  max-height: 1000px;
+  padding: 20px;
 }
 .collapsible.active .collapsible-header::after {
   content: "\2212";
