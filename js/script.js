@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const collapsibles = document.querySelectorAll('.collapsible');
 
-
   collapsibles.forEach(collapsible => {
     collapsible.querySelector('.collapsible-header').addEventListener('click', function() {
       // Fermer tous les autres collapsibles
@@ -44,8 +43,21 @@ document.addEventListener("DOMContentLoaded", function() {
   // TOGGLE SWITCH
   const darkModeSwitch = document.querySelector('#darkModeSwitch');
 
+  // Vérifier si le mode sombre est activé dans localStorage
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+  // Si le mode sombre est activé, activer le switch et ajouter la classe dark-mode au body
+  if (isDarkMode) {
+    darkModeSwitch.checked = true;
+    document.body.classList.add('dark-mode');
+  }
+
   darkModeSwitch.addEventListener('change', function() {
+    // Basculer la classe dark-mode sur le body
     document.body.classList.toggle('dark-mode');
+
+    // Stocker l'état du mode sombre dans localStorage
+    localStorage.setItem('darkMode', darkModeSwitch.checked);
   });
 
 });
