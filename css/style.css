@@ -341,6 +341,7 @@ body.dark-mode .toc ol li a:hover {
   align-items: center;
   width: 80%;
   margin: 0 auto;
+  overflow: visible; /* Modifier cette propriété */
 }
 pre {
   /*width: 80%;*/
@@ -372,21 +373,20 @@ body.dark-mode .code-container h2 {
   overflow: hidden;
   margin-bottom: 15px;
   border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Ombre noire en mode clair */
-  transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out;
-  width: 100%; /* Largeur initiale à 100% */
-  min-width: 80%; /* Largeur minimale à 80% */
-  box-sizing: border-box; /* Inclure la bordure et le remplissage dans la largeur totale */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-out;
+  width: 100%;
+  min-width: 80%;
+  box-sizing: border-box;
 }
 
 /* En mode sombre, on change la couleur de l'ombre en blanc */
 body.dark-mode .collapsible {
-  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2); /* Ombre blanche en mode sombre */
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2);
 }
 
 .collapsible.active {
-  transform: scale(1.05); /* Augmenter légèrement la taille du collapsible actif */
-  margin-bottom: 30px; /* Ajouter une marge inférieure pour éviter le chevauchement */
+  transform: scale(1.05);
 }
 
 /* Ajoutez la couleur de fond et la couleur de texte pour les entêtes de collapsibles cliqués */
@@ -448,7 +448,7 @@ body.dark-mode .collapsible {
 
 /* En mode sombre, on change la couleur de l'ombre en blanc */
 body.dark-mode .collapsible-content.show {
-  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2); /* Ombre blanche en mode sombre */
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
 }
 
 .collapsible-content.show + .collapsible-header::after {
@@ -469,11 +469,11 @@ body.dark-mode .collapsible-content.show {
 }
 
 body.dark-mode .collapsible-content {
-  background-color: #444; /* Changez cette valeur pour une couleur plus claire */
+  background-color: #444;
 }
 
 body.dark-mode footer {
-  background-color: #444; /* Changez cette valeur pour une couleur plus claire */
+  background-color: #444;
 }
 
 /* Back to top Button */
