@@ -379,6 +379,7 @@ body.dark-mode .code-container h2 {
   width: 100%; /* Largeur initiale à 100% */
   min-width: 80%; /* Largeur minimale à 80% */
   box-sizing: border-box; /* Inclure la bordure et le remplissage dans la largeur totale */
+  display: block; /* Ajout de cette ligne */
 }
 /* En mode sombre, on change la couleur de l'ombre en blanc */
 body.dark-mode .collapsible {
@@ -423,7 +424,7 @@ body.dark-mode .collapsible {
 .collapsible-content {
   padding: 0 18px;
   max-height: 0;
-  overflow: hidden;
+  overflow: visible; /* Modification de cette ligne */
   transition: max-height 0.3s ease-out;
   position: relative;
   z-index: 1;
