@@ -492,6 +492,7 @@ body.dark-mode .collapsible {
   width: 100%;
   border-radius: 5px;
   padding-bottom: 10px;
+  max-height: 100%; 
 }
 
 /* En mode sombre, on change la couleur de l'ombre en blanc */
