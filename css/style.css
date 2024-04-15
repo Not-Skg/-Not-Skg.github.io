@@ -424,13 +424,13 @@ body.dark-mode .collapsible {
 .collapsible-content {
   padding: 0 18px;
   max-height: 0;
-  overflow: visible; /* Modification de cette ligne */
+  overflow: hidden; /* Modification de cette ligne */
   transition: max-height 0.3s ease-out;
   position: relative;
   z-index: 1;
 }
 .collapsible-content.show {
-  max-height: 500px;
+  max-height: none; /* Modification de cette ligne */
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1;
