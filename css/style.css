@@ -398,7 +398,9 @@ body.dark-mode .collapsible {
 }
 
 .collapsible.active {
-   transform: scale(1.05);
+  /*transform: scale(1.05);*/
+  transform: scaleY(1.05);
+  transform: scaleX(1.05);
 }
 
 
