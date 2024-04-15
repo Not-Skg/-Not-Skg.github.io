@@ -373,30 +373,34 @@ body.dark-mode .code-container h2 {
   margin-bottom: 15px;
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Ombre noire en mode clair */
-  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out;
   width: 100%; /* Largeur initiale à 100% */
   min-width: 80%; /* Largeur minimale à 80% */
   box-sizing: border-box; /* Inclure la bordure et le remplissage dans la largeur totale */
 }
+
 /* En mode sombre, on change la couleur de l'ombre en blanc */
 body.dark-mode .collapsible {
   box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2); /* Ombre blanche en mode sombre */
 }
+
 .collapsible.active {
   transform: scale(1.05); /* Augmenter légèrement la taille du collapsible actif */
-  padding: 20px;
+  margin-bottom: 30px; /* Ajouter une marge inférieure pour éviter le chevauchement */
 }
+
 /* Ajoutez la couleur de fond et la couleur de texte pour les entêtes de collapsibles cliqués */
 .collapsible.active .collapsible-header {
   background-color: #333;
   color: #fff;
-  padding: 18px 20px;
 }
+
 /* Ajoutez la couleur de fond et la couleur de texte pour les entêtes de collapsibles survolés */
 .collapsible:hover .collapsible-header {
   background-color: #333;
   color: #fff;
 }
+
 .collapsible-header {
   background-color: #fff;
   color: #333;
@@ -410,9 +414,11 @@ body.dark-mode .collapsible {
   font-size: 24px;
   font-weight: bold;
 }
+
 .collapsible-header:hover {
   background-color: #ddd;
 }
+
 .collapsible-header::after {
   content: '\002B';
   color: #333;
@@ -420,6 +426,7 @@ body.dark-mode .collapsible {
   float: right;
   margin-left: 5px;
 }
+
 .collapsible-content {
   padding: 0 18px;
   max-height: 0;
@@ -428,6 +435,7 @@ body.dark-mode .collapsible {
   position: relative;
   z-index: 1;
 }
+
 .collapsible-content.show {
   max-height: 500px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -437,30 +445,37 @@ body.dark-mode .collapsible {
   margin-bottom: 10px;
   border-radius: 5px;
 }
+
 /* En mode sombre, on change la couleur de l'ombre en blanc */
 body.dark-mode .collapsible-content.show {
   box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2); /* Ombre blanche en mode sombre */
 }
+
 .collapsible-content.show + .collapsible-header::after {
   content: "\2212";
 }
+
 .collapsible.active .collapsible-content {
-  max-height: 1000px;
-  padding: 20px;
+  max-height: 500px;
 }
+
 .collapsible.active .collapsible-header::after {
   content: "\2212";
   color: #fff;
 }
+
 .collapsible:hover .collapsible-header::after {
   color: #fff;
 }
+
 body.dark-mode .collapsible-content {
   background-color: #444; /* Changez cette valeur pour une couleur plus claire */
 }
+
 body.dark-mode footer {
   background-color: #444; /* Changez cette valeur pour une couleur plus claire */
 }
+
 /* Back to top Button */
 #button {
   display: inline-block;
