@@ -471,6 +471,7 @@ body.dark-mode .collapsible {
 
 .collapsible-content {
   padding: 0 18px;
+  padding-bottom: 10px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
