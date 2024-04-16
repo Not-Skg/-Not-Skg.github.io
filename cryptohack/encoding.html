@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skg Walkthrough</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/StyleCryptoHack.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="/js/script.js"></script>
+    <link rel="icon" type="image/png" href="/img/logo.png">
+</head>
+    
+<body>
+    <!-- Back to top button -->
+    <a id="button" href="#top"></a>
+    
+    <header>
+      <a href="/" class="header-logo"><img src="/img/logo.png" width ="75" ></a>
+      <a href="/" class="header-brand"> SKG </a>
+      <a href="#" class="bar"></a>
+      <nav>
+          <ul>
+            <li><a href="/tryhackme"> Tryhackme </a> </li>
+            <li><a href="/cryptohack"> Cryptohack </a> </li>
+            <li><a href="/rootme"> Rootme </a> </li>
+            <li><a href="/whoami"> WhoAmI </a> </li>
+          </ul>
+
+        <div class="toggle-switch-container">
+          <label class="switch">
+            <input type="checkbox" id="darkModeSwitch" />
+            <span class="slider"></span>
+          </label>
+        
+          <div id="dropdown-header" class="dropdown">
+            <button class="dropbtn"> Code Snippet </button>
+            <div class="dropdown-content active">
+              <a href="/"> CODE </a>
+              <a href="/"> CODE </a>
+              <a href="/"> CODE </a>
+              <a href="/"> CODE </a>
+              <a href="/"> CODE </a>
+            </div>
+          </div>
+        </div>
+
+    </nav>
+    <div class="menu-toggle">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+  </header>
+<main>
+    <div class="container">
+      <article role="article">
+    		<h3> Blablabla </h3>
+        <br>
+
+        <dl class="toc">
+          <div class="banner-container">
+          </div>
+        
+          <h1 id="Toc-Title">CryptoHack</h1>
+          <hr style="margin-bottom: 0em; width: 30%; margin-left: 35%;">
+          <ol class="my-toc">
+            <li>
+              <h2>General</h2>
+              <ol>
+                <li><a href="/cryptohack">Encoding</a>
+                </li>
+
+                <li><a href="/cryptohack">XOR</a>
+                </li>
+                
+                <li><a href="/cryptohack">Mathematics</a>
+                </li>
+                
+                <li><a href="/cryptohack">Data Formats</a>
+                </li>
+                    
+              </ol>
+            </li>
+          </ol>
+          <hr style="margin-bottom: 0em; width: 20%; margin-left: 42%;">
+           <ol class="my-toc">
+            <li>
+              <h2>Mathematics</h2>
+              <ol>
+                <li><a href="/cryptohack">Modular Math</a>
+                </li>
+
+                <li><a href="/cryptohack">Lattices</a>
+                </li>
+                
+                <li><a href="/cryptohack">Brainteasers Part 1</a>
+                </li>
+                
+                <li><a href="/cryptohack">Brainteasers Part 2</a>
+                </li>
+                
+                <li><a href="/cryptohack">Primes</a>
+                </li>
+                    
+              </ol>
+            </li>
+          </ol>
+            </li>
+          </ol>
+          <hr style="margin-bottom: 3em; width: 30%; margin-left: 35%;">
+        </dl>
+
+
+<!-- Start Post  -->
+        <div class="code-container">
+            <h2> Encoding </h2>
+
+                <!-- Start Collapsible  -->
+            <div class="collapsible">
+              <button class="collapsible-header">ASCII</button>
+              <div class="collapsible-content">
+                <p>ASCII is a 7-bit encoding standard which allows the representation of text using the integers 0-127.<br>
+                  Using the below integer array, convert the numbers to their corresponding ASCII characters to obtain a flag.<br>
+                  [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]</p>
+                <pre><code class="language-python">
+                    Liste = [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]
+                      # using list comprehension
+                    Flag = ''.join([str(chr(elem)) for elem in Liste])
+                    print(Flag)
+                </code></pre>
+              </div>
+            </div>
+            
+            <div class="collapsible">
+              <button class="collapsible-header">Hex</button>
+              <div class="collapsible-content">
+                <p>Blablablablabla</p>
+              </div>
+            </div>
+            
+            <div class="collapsible">
+              <button class="collapsible-header">Base64</button>
+              <div class="collapsible-content">
+                <p>Blablablablabla</p>
+              </div>
+            </div>
+            
+            <div class="collapsible">
+              <button class="collapsible-header">Bytes and Big Integers</button>
+              <div class="collapsible-content">
+                <p>Blablablablabla</p>
+              </div>
+            </div>
+
+            <div class="collapsible">
+              <button class="collapsible-header">Encoding Challenge</button>
+              <div class="collapsible-content">
+                <p>Blablablablabla</p>
+              </div>
+            </div>
+          <!-- Finish Collapsible  -->
+        </div>
+<!-- Finish post  -->
+        
+    	</article>
+      </div>
+
+    </main>
+    <footer>
+      <div class="container">
+        <p>By Skg</p>
+        <p>This website was created to help beginners in cybersecurity like me to unlock challenges and improve their skills. Let's learn together !</p>
+        <ul class="social-links">
+          <li><a href="https://twitter.com/Skgatwork" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://github.com/Not-Skg" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="mailto:skgatwork@protonmail.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+</body>
+</html>
