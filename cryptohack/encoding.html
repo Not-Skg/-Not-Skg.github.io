@@ -150,7 +150,22 @@
             <div class="collapsible">
               <button class="collapsible-header">Base64</button>
               <div class="collapsible-content">
-                <p>Blablablablabla</p>
+                <p>Another common encoding scheme is Base64, which allows us to represent binary data as an ASCII string using an alphabet of 64 characters.<br>
+                One character of a Base64 string encodes 6 binary digits (bits), and so 4 characters of Base64 encode three 8-bit bytes.<br>
+                Base64 is most commonly used online, so binary data such as images can be easily included into HTML or CSS files.<br>
+                Take the below hex string, decode it into bytes and then encode it into Base64.<br>
+                    72bca9b68fc16ac7beeb8f849dca1d8a783e8acf9679bf9269f7bf</p>
+
+                <pre><code class="language-python">
+                   import base64
+                    hex_string = "72bca9b68fc16ac7beeb8f849dca1d8a783e8acf9679bf9269f7bf"
+
+                    bytes_data = bytes.fromhex(hex_string)
+                    print(bytes_data)
+
+                    base64_data = base64.b64encode(bytes_data)
+                    print(base64_data.decode())
+                </code></pre>
               </div>
             </div>
             
