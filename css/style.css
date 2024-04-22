@@ -44,9 +44,11 @@ h5, h6, dl dt {
 
 /* Style pour les notes */
 .notes {
-  font-family: Arial, sans-serif;
+  font-family: Georgia, serif;
   font-style: italic;
+  font-size: 1.05em;
   color: #666;
+  line-height: 1.5;
   margin-top: 10px;
 }
 
