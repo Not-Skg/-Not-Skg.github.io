@@ -75,7 +75,7 @@ body.dark-mode .notes {
 }
 
 /* Style pour le code dans les instructions en mode dark */
-.instructions code {
+body.dark-mode .instructions code {
   font-family: Consolas, monospace;
   font-size: 0.9em;
   color: #feb32b;
