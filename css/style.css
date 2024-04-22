@@ -42,6 +42,12 @@ h5, h6, dl dt {
   margin-bottom: 10px;
 }
 
+/* Style pour les instructions en mode dark */
+body.dark-mode .instructions {
+  color: #ddd;
+}
+
+
 /* Style pour les notes */
 .notes {
   font-family: Georgia, serif;
@@ -52,7 +58,23 @@ h5, h6, dl dt {
   margin-top: 10px;
 }
 
+/* Style pour les notes en mode dark */
+body.dark-mode .notes {
+  color: #bbb;
+}
+
 /* Style pour le code dans les instructions */
+.instructions code {
+  font-family: Consolas, monospace;
+  font-size: 0.9em;
+  color: #feb32b;
+  background-color: #f8f8f8;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin: 0 2px;
+}
+
+/* Style pour le code dans les instructions en mode dark */
 .instructions code {
   font-family: Consolas, monospace;
   font-size: 0.9em;
