@@ -33,6 +33,24 @@ h5, h6, dl dt {
 }
 
 
+/* Style pour les consignes */
+.instructions {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style pour les notes */
+.notes {
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  color: #666;
+  margin-top: 10px;
+}
+
+
+
 /* HEADER */
 header{
   position: fixed;
