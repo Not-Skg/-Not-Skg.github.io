@@ -79,7 +79,7 @@ body.dark-mode .notes {
   font-family: Consolas, monospace;
   font-size: 0.9em;
   color: #feb32b;
-  background-color: #f8f8f8;
+  background-color: #333;
   padding: 2px 4px;
   border-radius: 3px;
   margin: 0 2px;
@@ -424,10 +424,7 @@ body.dark-mode pre {
   background-color: #333;
   color: #fff;
 }
-body.dark-mode code {
-  background-color: #333;
-  color: #fff;
-}
+
 /* Dark mode styles for code container title */
 body.dark-mode .code-container h2 {
   color: #fff;
