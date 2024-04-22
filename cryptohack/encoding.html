@@ -120,15 +120,16 @@
             <div class="collapsible">
               <button class="collapsible-header">ASCII</button>
               <div class="collapsible-content">
-                <p>ASCII is a 7-bit encoding standard which allows the representation of text using the integers 0-127.<br>
+                <p class="instructions">ASCII is a 7-bit encoding standard which allows the representation of text using the integers 0-127.<br>
                   Using the below integer array, convert the numbers to their corresponding ASCII characters to obtain a flag.<br>
-                  [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]</p>
+                  [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125] </p>
                 <pre><code class="language-python">
 Liste = [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]
 # using list comprehension
 Flag = ''.join([str(chr(elem)) for elem in Liste])
 print(Flag)
                 </code></pre>
+                <p class="notes"> This is a note about the code. </p>
               </div>
             </div>
             
