@@ -687,12 +687,9 @@ footer .social-links a:hover {
 .under-construction-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 50vh; /* Adjust this value to change the height of the container */
+  height: 23vh; /* Adjust this value to change the height of the container */
   background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .under-construction-container h1 {
