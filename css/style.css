@@ -681,3 +681,21 @@ footer .social-links a {
 footer .social-links a:hover {
   color: #FF9800;
 }
+
+
+/* Construction Page */
+.under-construction-container {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.under-construction-container h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.under-construction-container p {
+  font-size: 1.2em;
+  color: #666;
+}
