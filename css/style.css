@@ -705,3 +705,8 @@ footer .social-links a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.top-position h1,
+.top-position p {
+  margin-top: -50px; /* Adjust this value to move the content higher or lower */
+}
