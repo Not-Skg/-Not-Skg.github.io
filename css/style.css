@@ -690,8 +690,6 @@ footer .social-links a:hover {
   justify-content: center;
   align-items: center;
   height: 50vh; /* Adjust this value to change the height of the container */
-  background-color: #FFFFFF;
-  background-image: url("/img/WorkBanner.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
