@@ -686,7 +686,6 @@ footer .social-links a:hover {
 /* Construction Page */
 .under-construction-container {
   text-align: center;
-  padding: 50px 0;
 }
 
 .under-construction-container h1 {
@@ -698,4 +697,11 @@ footer .social-links a:hover {
 .under-construction-container p {
   font-size: 1.2em;
   color: #666;
+}
+
+.top-position {
+  position: absolute;
+  top: 50vh; /* Adjust this value based on the height of your banner */
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
