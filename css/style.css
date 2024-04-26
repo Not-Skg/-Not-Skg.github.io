@@ -301,85 +301,21 @@ body.dark-mode .dropbtn{
 }
 /* TABLE OF CONTENTS */
 .toc {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  justify-content: center;
   text-align: center;
   margin: 0 auto;
   width: 100%;
 }
 
-.toc h1 {
-  font-family: 'Georgia', serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 36px;
-  color: #333;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.toc hr {
-  border: none;
-  height: 1px;
-  background-color: #ccc;
-  margin-bottom: 3em;
-  width: 30%;
-  margin-left: 35%;
-}
-.toc ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.toc ol ol {
-  padding-left: 20px;
-}
-.toc ol li {
-  font-family: 'merriweather-regular';
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
-  color: #333;
-  /*margin-bottom: 10px;*/
-  text-align: left;
-  white-space: nowrap;
-}
-
-.toc ol li a {
-  color: #333;
-  text-decoration: none;
-  display: inline-block;
-  padding: 5px 10px;
-}
-.toc ol li a:hover {
-  color: #fff;
-  background-color: #333;
-  border-radius: 5px;
-}
-
-
 .my-toc {
-  display: inline-block;
-  margin: 0 auto;
-  text-align: left;
+  width: 100%;
 }
 
-.my-toc ol ol {
-  margin-left: 20px;
-}
-
-.my-toc a {
-  text-decoration: none;
-}
-
-.my-toc li h2 {
+.my-toc h2 {
   font-size: 1.5em;
   font-weight: bold;
 }
 
-.my-toc li li a {
+.my-toc li a {
   font-size: 1.2em;
   font-weight: normal;
 }
@@ -404,11 +340,6 @@ body.dark-mode .toc ol li a:hover {
 .my-toc ol li a {
   width: auto;
 }
-
-.my-toc h2 {
-  width: 100%;
-}
-
 /* Code Container and Explanation */
 .code-container {
   display: flex;
