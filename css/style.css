@@ -369,7 +369,9 @@ body.dark-mode .dropbtn{
 .my-toc li h2 {
   font-size: 1.5em;
   font-weight: bold;
-   margin-left: -20px; 
+  margin-left: -20px;     
+  max-width: 200px; /* Ajustez la valeur en fonction de vos besoins */
+  word-wrap: break-word;
 }
 
 .my-toc li li a {
