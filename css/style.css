@@ -301,9 +301,9 @@ body.dark-mode .dropbtn{
 }
 /* TABLE OF CONTENTS */
 .toc {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
   justify-content: center;
   text-align: center;
   margin: 0 auto;
@@ -405,6 +405,9 @@ body.dark-mode .toc ol li a:hover {
   width: auto;
 }
 
+.my-toc h2 {
+  width: 100%;
+}
 
 /* Code Container and Explanation */
 .code-container {
