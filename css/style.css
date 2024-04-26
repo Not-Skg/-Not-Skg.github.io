@@ -295,7 +295,10 @@ body.dark-mode .dropbtn{
   color: #fff;
 }
 
-
+.banner-container {
+  display: block;
+  width: 100%;
+}
 /* TABLE OF CONTENTS */
 .toc {
   display: flex;
