@@ -355,7 +355,8 @@ body.dark-mode .dropbtn{
     display: inline-block;
     text-align: left;
     width: 500px;
-    margin-left: calc(50% - 250px); /* (50% de la largeur du parent - 50% de la largeur de l'élément) */
+    position: relative;
+    left: 50%;
     transform: translateX(-50%);
 }
 
