@@ -353,11 +353,8 @@ body.dark-mode .dropbtn{
 
 .my-toc {
     display: inline-block;
-    margin: 0 auto;
     text-align: left;
-    word-break: break-all;
     width: 500px;
-    white-space: pre-wrap;
 }
 
 
