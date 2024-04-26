@@ -355,7 +355,9 @@ body.dark-mode .dropbtn{
   display: inline-block;
   margin: 0 auto;
   text-align: left;
+  word-break: break-all;
 }
+
 
 .my-toc ol ol {
   margin-left: 20px;
