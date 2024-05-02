@@ -171,7 +171,16 @@ PITIT CODE DES FAMILLES
             <div class="collapsible">
               <button class="collapsible-header">Modular Arithmetic 2</button>
                 <div class="collapsible-content">
-                <p class="instructions">TODO></p>
+                <p class="instructions">We'll pick up from the last challenge and imagine we've picked a modulus <code>p</code>, and we will restrict ourselves to the case when <code>p</code> is prime.<br>
+The integers modulo <code>p</code> define a field, denoted <code>Fp</code>.<br>
+If the modulus is not prime, the set of integers modulo <code>n</code> define a ring.<br>
+A finite field <code>Fp</code> is the set of integers <code>{0,1,...,p-1}</code>, and under both addition and multiplication there is an inverse element <code>b</code> for every element a in the set, such that <code>a + b = 0</code> and <code>a * b = 1</code>.<br>
+Note that the identity element for addition and multiplication is different! This is because the identity when acted with the operator should do nothing: <code>a + 0 = a</code> and <code>a * 1 = a</code>.<br>
+Lets say we pick <code>p = 17</code>. Calculate <code>3^17 mod 17</code>. Now do the same but with <code>5^17 mod 17</code>.<br>
+What would you expect to get for <code>7^16 mod 17</code>? Try calculating that.<br>
+This interesting fact is known as Fermat's little theorem. We'll be needing this (and its generalisations) when we look at RSA cryptography.<br>
+Now take the prime <code>p = 65537</code>. Calculate <code>27324678765465536 mod 65537</code>.<br>
+Did you need a calculator?></p>
                 <pre><code class="language-python">
 PITIT CODE DES FAMILLES
                 </code></pre>
