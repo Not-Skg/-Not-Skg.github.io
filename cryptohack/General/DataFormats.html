@@ -111,19 +111,24 @@
             <div class="collapsible">
               <button class="collapsible-header">Privacy-Enchanced Mail?</button>
               <div class="collapsible-content">
-                <p class="instructions">The Greatest Common Divisor (GCD), sometimes known as the highest common factor, is the largest number which divides two positive integers (a,b).<br><br>
-                  For <code>a = 12, b = 8</code> we can calculate the divisors of a: <code>{1,2,3,4,6,12}</code> and the divisors of b: <code>{1,2,4,8}</code>. Comparing these two, we see that <code>gcd(a,b) = 4</code>.<br>
-                  Now imagine we take <code>a = 11, b = 17</code>. Both a and b are prime numbers. As a prime number has only itself and <code>1</code> as divisors, <code>gcd(a,b) = 1</code>.<br><br>
-                  We say that for any two integers <code>a,b</code>, if <code>gcd(a,b) = 1</code> then <code>a</code> and <code>b</code> are coprime integers.<br><br>
-                  If <code>a</code> and <code>b</code> are prime, they are also coprime. If <code>a</code> is prime and <code>b '<' a</code> then <code>a</code> and <code>b</code> are coprime.<br><br>
-                  Think about the case for <code>a</code> prime and <code>b > a</code>, why are these not necessarily coprime?<br><br>
-                  There are many tools to calculate the GCD of two integers, but for this task we recommend looking up Euclid's Algorithm.<br><br>
-                  Try coding it up; it's only a couple of lines. Use <code>a = 12, b = 8</code> to test it.<br><br>
-                  Now calculate <code>gcd(a,b)</code> for <code>a = 66528, b = 52920</code> and enter it below.</p>
+                <p class="instructions">As we've seen in the encoding section, cryptography involves dealing with data in a wide variety of formats: big integers, raw bytes, hex strings and more. A few structured formats have been standardised to help send and receive cryptographic data. It helps to be able to recognise and manipulate these common data formats.<br><br>
+                PEM is a popular format for sending keys, certificates, and other cryptographic material. It looks like:<br>
+                <code>-----BEGIN RSA PUBLIC KEY-----<br>
+                MIIBCgKC... (a whole bunch of base64)<br>
+                -----END RSA PUBLIC KEY-----</code><br><br>
+                It wraps base64-encoded data by a one-line header and footer to indicate how to parse the data within. Perhaps unexpectedly, it's important for there to be the correct number of hyphens in the header and footer, otherwise cryptographic tools won't be able to recognise the file.<br><br>
+                The data that gets base64-encoded is DER-encoded ASN.1 values. Confused? The resources linked below have more information about what these acronyms mean but the complexity is there for historical reasons and going too deep into the details may drive you insane.<br><br>
+                Extract the private key d as a decimal integer from this PEM-formatted RSA key.<br><br>
+                There are two main approaches for solving this challenge. The data in the certificate can be read with the openssl command line tool, or in Python using PyCryptodome. We recommend using PyCryptodome: first import the RSA module with <code>from Crypto.PublicKey import RSA</code> and you can read the key data using <code>RSA.importKey()</code><br><br>.</p>
                 <pre><code class="language-python">
 PITIT CODE DES FAMILLES
                 </code></pre>
-                <p class="notes"> This is a note about the code. </p>
+                <p class="notes"> Challenge files:<br>
+  - privacy_enhanced_mail.pem<br><br>
+
+Resources:<br>
+  - ASN.1 vs DER vs PEM vs x509 vs PKCS#7 vs ....<br>
+  - A Warm Welcome to ASN.1 and DER </p>
               </div>
             </div>
             
