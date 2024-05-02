@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skg - Data Formats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/StyleCryptoHack.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/prism/prism.css">
+    <script src="/prism/prism.js"></script>
+    <script src="/js/script.js"></script>
+    <link rel="icon" type="image/png" href="/img/logo.png">
+</head>
+    
+<body>
+    <!-- Back to top button -->
+    <a id="button" href="#top"></a>
+    
+    <header>
+      <a href="/" class="header-logo"><img src="/img/logo.png" width ="75" ></a>
+      <a href="/" class="header-brand"> SKG </a>
+      <a href="#" class="bar"></a>
+      <nav>
+          <ul>
+            <li><a href="/tryhackme"> Tryhackme </a> </li>
+            <li><a href="/cryptohack"> Cryptohack </a> </li>
+            <li><a href="/rootme"> Rootme </a> </li>
+            <li><a href="/whoami"> WhoAmI </a> </li>
+          </ul>
+
+        <div class="toggle-switch-container">
+          <label class="switch">
+            <input type="checkbox" id="darkModeSwitch" />
+            <span class="slider"></span>
+          </label>
+        
+          <div id="dropdown-header" class="dropdown">
+            <button class="dropbtn"> Code Snippet </button>
+            <div class="dropdown-content active">
+              <a href="/"> CODE </a>
+              <a href="/"> CODE </a>
+              <a href="/"> CODE </a>
+              <a href="/"> CODE </a>
+              <a href="/"> CODE </a>
+            </div>
+          </div>
+        </div>
+
+    </nav>
+    <div class="menu-toggle">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+  </header>
+<main>
+    <div class="container">
+      <article role="article">
+    		<h3> Blablabla </h3>
+        <br>
+
+        <dl class="toc">
+          <div class="banner-container">
+          </div>
+        
+          <h1 id="Toc-Title">CryptoHack</h1>
+          <hr style="border: none; height: 1px; background-color: #ccc; margin: 0 auto; width: 35%;">
+          <ol class="my-toc">
+            <li>
+              <h2>General</h2>
+              <ol>
+                <li><a href="/cryptohack/General/encoding">Encoding</a></li>
+
+                <li><a href="/cryptohack/General/XOR">XOR</a></li>
+                
+                <li><a href="/cryptohack/General/Mathematics"><strong><font color =#FF9800>Mathematics</a></li>
+                
+                <li><a href="/cryptohack/General/DataFormats">Data Formats</a></li>
+                    
+              </ol>
+            </li>
+          </ol>
+          <hr style="border: none; height: 1px; background-color: #ccc; margin: 1em auto; width: 25%;">
+           <ol class="my-toc">
+            <li>
+              <h2>Mathematics</h2>
+              <ol>
+                <li><a href="/cryptohack/Mathematics/ModularMath">Modular Math</a></li>
+
+                <li><a href="/cryptohack/Mathematics/Lattices">Lattices</a></li>
+                
+                <li><a href="/cryptohack/Mathematics/Brainteasers1">Brainteasers Part 1</a></li>
+                
+                <li><a href="/cryptohack/Mathematics/Brainteasers2">Brainteasers Part 2</a></li>
+                
+                <li><a href="/cryptohack/Mathematics/Primes">Primes</a></li>
+                    
+              </ol>
+            </li>
+          </ol>
+            </li>
+          </ol>
+          <hr style="border: none; height: 1px; background-color: #ccc; margin: 0 auto; width: 35%;">
+        </dl>
+
+
+<!-- Start Post  -->
+        <div class="code-container">
+            <h2> Data Formats </h2>
+
+                <!-- Start Collapsible  -->
+            <div class="collapsible">
+              <button class="collapsible-header">Privacy-Enchanced Mail?</button>
+              <div class="collapsible-content">
+                <p class="instructions">The Greatest Common Divisor (GCD), sometimes known as the highest common factor, is the largest number which divides two positive integers (a,b).<br><br>
+                  For <code>a = 12, b = 8</code> we can calculate the divisors of a: <code>{1,2,3,4,6,12}</code> and the divisors of b: <code>{1,2,4,8}</code>. Comparing these two, we see that <code>gcd(a,b) = 4</code>.<br>
+                  Now imagine we take <code>a = 11, b = 17</code>. Both a and b are prime numbers. As a prime number has only itself and <code>1</code> as divisors, <code>gcd(a,b) = 1</code>.<br><br>
+                  We say that for any two integers <code>a,b</code>, if <code>gcd(a,b) = 1</code> then <code>a</code> and <code>b</code> are coprime integers.<br><br>
+                  If <code>a</code> and <code>b</code> are prime, they are also coprime. If <code>a</code> is prime and <code>b '<' a</code> then <code>a</code> and <code>b</code> are coprime.<br><br>
+                  Think about the case for <code>a</code> prime and <code>b > a</code>, why are these not necessarily coprime?<br><br>
+                  There are many tools to calculate the GCD of two integers, but for this task we recommend looking up Euclid's Algorithm.<br><br>
+                  Try coding it up; it's only a couple of lines. Use <code>a = 12, b = 8</code> to test it.<br><br>
+                  Now calculate <code>gcd(a,b)</code> for <code>a = 66528, b = 52920</code> and enter it below.</p>
+                <pre><code class="language-python">
+PITIT CODE DES FAMILLES
+                </code></pre>
+                <p class="notes"> This is a note about the code. </p>
+              </div>
+            </div>
+            
+            <div class="collapsible">
+              <button class="collapsible-header">CERTainly not</button>
+              <div class="collapsible-content">
+                <p class="instructions">As mentioned in the previous challenge, PEM is just a nice wrapper above DER encoded ASN.1. In some cases you may come across DER files directly; for instance many Windows utilities prefer to work with DER files by default. However, other tools expect PEM format and have difficulty importing a DER file, so it's good to know how to convert one format to another.<br><br>
+                An SSL certificate is a crucial part of the modern web, binding a cryptographic key to details about an organisation. We'll cover more about these and PKI in the TLS category. Presented here is a DER-encoded x509 RSA certificate. Find the modulus of the certificate, giving your answer as a decimal.</p><br><br>
+                <pre><code class="language-python">
+PITIT CODE DES FAMILLES
+                </code></pre>
+                <p class="notes"> Challenge files:<br>
+  - 2048b-rsa-example-cert.der </p>
+              </div>
+            </div>
+            
+            <div class="collapsible">
+              <button class="collapsible-header">SSH Keys</button>
+              <div class="collapsible-content">
+                <p class="instructions">Imagine you lean over and look at a cryptographer's notebook. You see some notes in the margin:<br>
+                <code>4 + 9 = 1<br>
+5 - 7 = 10<br>
+2 + 3 = 5</code><br><br>
+                At first you might think they've gone mad. Maybe this is why there are so many data leaks nowadays you'd think, but this is nothing more than modular arithmetic modulo 12 (albeit with some sloppy notation).<br>
+                You may not have been calling it modular arithmetic, but you've been doing these kinds of calculations since you learnt to tell the time (look again at those equations and think about adding hours).<br>
+                Formally, "calculating time" is described by the theory of congruences. We say that two integers are congruent modulo m if <code>a ≡ b mod m</code>.<br>
+                Another way of saying this, is that when we divide the integer <code>a</code> by <code>m</code>, the remainder is <code>b</code>. This tells you that if m divides a (this can be written as <code>m | a</code>) then <code>a ≡ 0 mod m</code>.<br>
+                Calculate the following integers:<br>
+                <code>11 ≡ x mod 6<br>
+8146798528947 ≡ y mod 17</code><br>
+                The solution is the smaller of the two integers.
+                </p>
+
+                <pre><code class="language-python">
+PITIT CODE DES FAMILLES
+                </code></pre>
+                <p class="notes"> This is a note about the code. </p>
+              </div>
+            </div>
+            
+            <div class="collapsible">
+              <button class="collapsible-header">Transparency</button>
+                <div class="collapsible-content">
+                <p class="instructions">When you connect to a website over HTTPS, the first TLS message sent by the server is the ServerHello containing the server TLS certificate. Your browser verifies that the TLS certificate is valid, and if not, will terminate the TLS handshake. Verification includes ensuring that:<br>
+                - the name on the certificate matches the domain<br>
+                - the certificate has not expired<br>
+                - the certificate is ultimately signed (via a "chain of trust") by a root key of a Certificate Authority (CA) that's trusted by your browser or operating system<br><br>
+                Since CAs have the power to sign any certificate, the security of the internet depends upon these organisations to issue TLS certificates to the correct people: they must only issue certificates to the real domain owners. However with Windows trusting root certificates from over 100 organisations by default, there's a number of opportunities for hackers, politics, or incompetence to break the whole model. If you could trick just a single CA to issue you a certificate for microsoft.com, you could use the corresponding private key to sign malware and bypass trust controls on Windows. CAs are strongly incentivised to be careful since their business depends upon people trusting them, however in practice they have failed several times.<br><br>
+                In 2011 Comodo CA was compromised and the hacker was able to issue certificates for Gmail and other services. In 2016, Symantec was found to have issued over 150 certificates without the domain owner's knowledge, as well as 2400 certificates for domains that were never registered.<br><br>
+                Due to such events, together with the fact that fraudulent certificates can take a long time to be discovered, since 2018 Certificate Transparency has been enforced by Google Chrome. Every CA must publish all certificates that they issue to a log, which anyone can search.<br><br>
+                Attached is an RSA public key in PEM format. Find the subdomain of cryptohack.org which uses these parameters in its TLS certificate, and visit that subdomain to obtain the flag.<br><br>
+                <pre><code class="language-python">
+PITIT CODE DES FAMILLES
+                </code></pre>
+                <p class="notes"> Challenge files:<br>
+                - transparency.pem</p> </p>
+              </div>
+            </div>
+
+          <!-- Finish Collapsible  -->
+        </div>
+<!-- Finish post  -->
+        
+    	</article>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>By Skg</p>
+        <p>This website was created to help beginners in cybersecurity like me to unlock challenges and improve their skills. Let's learn together !</p>
+        <ul class="social-links">
+          <li><a href="https://twitter.com/Skgatwork" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://github.com/Not-Skg" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="mailto:skgatwork@protonmail.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+
+</body>
+</html>
