@@ -540,6 +540,29 @@ body.dark-mode footer {
   background-color: #444;
 }
 
+.collapsible-content .card.truthTable {
+  width: 50%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #444;
+  color: #fff;
+}
+
+.collapsible-content .card.truthTable th,
+.collapsible-content .card.truthTable td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #666;
+}
+
+.collapsible-content .card.truthTable th {
+  background-color: #333;
+  font-weight: normal;
+}
+
+
+
+
 /* Back to top Button */
 #button {
   display: inline-block;
