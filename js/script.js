@@ -65,4 +65,25 @@ document.addEventListener("DOMContentLoaded", function() {
     localStorage.setItem('darkMode', darkModeSwitch.checked);
   });
 
+
+
+  
+// Timeline
+const timelinePoints = document.querySelectorAll('.timeline-point');
+const timelineContents = document.querySelectorAll('.timeline-content p');
+
+timelinePoints.forEach((point, index) => {
+  point.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // Masquer tous les contenus
+    timelineContents.forEach((content) => {
+      content.style.display = 'none';
+    });
+
+    // Afficher le contenu correspondant au point cliqué
+    timelineContents[index].style.display = 'block';
+  });
+});
+
 });
