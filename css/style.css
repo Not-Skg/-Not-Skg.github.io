@@ -786,9 +786,7 @@ footer .social-links a:hover {
 }
 
 .timeline-line {
-  position: absolute;
-  top: 50px;
-  left: 0;
+
   width: 100%;
   border: none;
   border-top: 1px dashed #ccc;
