@@ -729,3 +729,52 @@ footer .social-links a:hover {
   margin-top: 10px;
   text-align: center;
 }
+
+
+/* TIMELINE */
+
+.timeline {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline li {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.timeline-point {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-content {
+  margin-top: 30px;
+}
+
+.timeline-content p {
+  display: none;
+}
