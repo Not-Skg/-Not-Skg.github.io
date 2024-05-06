@@ -93,6 +93,19 @@ function updateTimeline() {
   }
 }
 
+// Ajouter un gestionnaire d'événements click à chaque élément de la timeline
+var timelineItems = document.getElementsByClassName('timeline-item');
+for (var i = 0; i < timelineItems.length; i++) {
+  timelineItems[i].addEventListener('click', function() {
+    var timelineText = this.getElementsByClassName('timeline-text')[0];
+    if (timelineText.style.display === 'none') {
+      timelineText.style.display = 'block';
+    } else {
+      timelineText.style.display = 'none';
+    }
+  });
+}
+
 // Appeler la fonction lorsque la page est chargée
 window.onload = updateTimeline;
 
