@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   
 // Timeline
-window.onload = function() {
+function updateTimeline() {
   var timeline = document.getElementById('timeline');
   var timelineItems = timeline.getElementsByClassName('timeline-item');
 
@@ -91,6 +91,12 @@ window.onload = function() {
 
     timelineItems[i].style.left = left;
   }
-};
+}
+
+// Appeler la fonction lorsque la page est chargée
+window.onload = updateTimeline;
+
+// Appeler la fonction lorsque la fenêtre est redimensionnée
+window.addEventListener('resize', updateTimeline);
 
 });
