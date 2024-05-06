@@ -93,16 +93,13 @@ function updateTimeline() {
   }
 }
 
-// Ajouter un gestionnaire d'événements click à chaque élément de la timeline
+// Ajouter un gestionnaire d'événements pour les clics sur les éléments de la timeline
 var timelineItems = document.getElementsByClassName('timeline-item');
+
 for (var i = 0; i < timelineItems.length; i++) {
   timelineItems[i].addEventListener('click', function() {
-    var timelineText = this.getElementsByClassName('timeline-text')[0];
-    if (timelineText.style.display === 'none') {
-      timelineText.style.display = 'block';
-    } else {
-      timelineText.style.display = 'none';
-    }
+    var text = this.getAttribute('data-text');
+    document.getElementById('timeline-text').textContent = text;
   });
 }
 
@@ -111,5 +108,6 @@ window.onload = updateTimeline;
 
 // Appeler la fonction lorsque la fenêtre est redimensionnée
 window.addEventListener('resize', updateTimeline);
+
 
 });
