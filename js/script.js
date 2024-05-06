@@ -65,4 +65,33 @@ document.addEventListener("DOMContentLoaded", function() {
     localStorage.setItem('darkMode', darkModeSwitch.checked);
   });
 
+
+  // Timeline
+    // Ajouter un écouteur d'événements pour les clics sur les dates de la frise chronologique
+  const timelineDates = document.querySelectorAll('.timeline-date');
+  timelineDates.forEach(timelineDate => {
+    timelineDate.addEventListener('click', function() {
+      // Trouver le collapsible correspondant à la date cliquée
+      const collapsibleId = this.getAttribute('data-collapsible-id');
+      const collapsible = document.querySelector(`#${collapsibleId}`);
+
+      // Fermer tous les autres collapsibles
+      collapsibles.forEach(otherCollapsible => {
+        if (otherCollapsible !== collapsible) {
+          otherCollapsible.classList.remove('active');
+          otherCollapsible.querySelector('.collapsible-content').style.maxHeight = null;
+        }
+      });
+
+      // Basculer l'état actif du collapsible correspondant à la date cliquée
+      collapsible.classList.toggle('active');
+      const content = collapsible.querySelector('.collapsible-content');
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+
 });
