@@ -751,10 +751,10 @@ footer .social-links a:hover {
 }
 
 .timeline li {
-  flex-basis: 20%;
-  flex-shrink: 1;
+  flex-basis: 0; /* Modifiez cette ligne pour permettre aux éléments de la liste de s'étendre */
+  flex-grow: 1; /* Ajoutez cette ligne pour permettre aux éléments de la liste de s'étendre */
   text-align: center;
-  position: relative; /* Ajoutez cette ligne pour positionner les marqueurs par rapport à l'élément parent */
+  position: relative;
 }
 
 .timeline-point {
@@ -767,7 +767,7 @@ footer .social-links a:hover {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  position: relative; /* Modifiez cette ligne pour positionner les marqueurs par rapport à l'élément parent */
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -780,4 +780,3 @@ footer .social-links a:hover {
 .timeline-content p {
   display: none;
 }
-
