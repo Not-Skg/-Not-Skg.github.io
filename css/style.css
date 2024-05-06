@@ -757,7 +757,6 @@ footer .social-links a:hover {
   z-index: 1;
 }
 
-
 .timeline-item:hover {
   background-color: #ccc; /* Couleur de survol */
 }
@@ -765,7 +764,6 @@ footer .social-links a:hover {
 .timeline-item.selected {
   background-color: #FF9800; /* Couleur de sélection */
 }
-
 
 #timeline-text {
   font-family: Arial, sans-serif;
@@ -799,7 +797,9 @@ footer .social-links a:hover {
 }
 
 .timeline-line {
-
+  position: absolute; // Ajouter la propriété position
+  top: 50px;
+  left: 0;
   width: 100%;
   border: none;
   border-top: 1px dashed #ccc;
