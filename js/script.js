@@ -69,21 +69,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
   
 // Timeline
-const timelinePoints = document.querySelectorAll('.timeline-point');
-const timelineContents = document.querySelectorAll('.timeline-content p');
+window.onload = function() {
+  var timeline = document.getElementById('timeline');
+  var timelineItems = timeline.getElementsByClassName('timeline-item');
 
-timelinePoints.forEach((point, index) => {
-  point.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    // Masquer tous les contenus
-    timelineContents.forEach((content) => {
-      content.style.display = 'none';
-    });
-
-    // Afficher le contenu correspondant au point cliqué
-    timelineContents[index].style.display = 'block';
+  // Calculer les intervalles entre les dates
+  var dates = Array.from(timelineItems).map(function(item) {
+    return new Date(item.getAttribute('data-date')).getTime();
   });
-});
+
+  var minDate = Math.min.apply(null, dates);
+  var maxDate = Math.max.apply(null, dates);
+
+  var totalInterval = maxDate - minDate;
+
+  // Positionner les éléments
+  for (var i = 0; i < timelineItems.length; i++) {
+    var intervalFromMin = dates[i] - minDate;
+    var percentage = intervalFromMin / totalInterval;
+    var left = percentage * (timeline.offsetWidth - timelineItems[i].offsetWidth) + 'px';
+
+    timelineItems[i].style.left = left;
+  }
+};
 
 });
