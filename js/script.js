@@ -65,32 +65,24 @@ document.addEventListener("DOMContentLoaded", function() {
     localStorage.setItem('darkMode', darkModeSwitch.checked);
   });
 
-
   // Timeline
-    // Ajouter un écouteur d'événements pour les clics sur les dates de la frise chronologique
+  const timelineTextContainer = document.querySelector('.timeline-text-container');
+
+  // Ajouter un écouteur d'événements pour les clics sur les dates de la frise chronologique
   const timelineDates = document.querySelectorAll('.timeline-date');
   timelineDates.forEach(timelineDate => {
     timelineDate.addEventListener('click', function() {
-      // Trouver le collapsible correspondant à la date cliquée
-      const collapsibleId = this.getAttribute('data-collapsible-id');
-      const collapsible = document.querySelector(`#${collapsibleId}`);
+      // Trouver le texte correspondant à la date cliquée
+      const timelineText = this.nextElementSibling;
 
-      // Fermer tous les autres collapsibles
-      collapsibles.forEach(otherCollapsible => {
-        if (otherCollapsible !== collapsible) {
-          otherCollapsible.classList.remove('active');
-          otherCollapsible.querySelector('.collapsible-content').style.maxHeight = null;
-        }
+      // Afficher le texte correspondant à la date cliquée dans le conteneur de texte de la frise chronologique
+      timelineTextContainer.innerHTML = timelineText.innerHTML;
+
+      // Masquer tous les collapsibles
+      collapsibles.forEach(collapsible => {
+        collapsible.classList.remove('active');
+        collapsible.querySelector('.collapsible-content').style.maxHeight = null;
       });
-
-      // Basculer l'état actif du collapsible correspondant à la date cliquée
-      collapsible.classList.toggle('active');
-      const content = collapsible.querySelector('.collapsible-content');
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
     });
   });
 
