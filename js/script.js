@@ -96,11 +96,22 @@ function updateTimeline() {
 // Ajouter un gestionnaire d'événements pour les clics sur les éléments de la timeline
 var timelineItems = document.getElementsByClassName('timeline-item');
 var selectedItem = null;
+var timelineText = document.getElementById('timeline-text');
 
 for (var i = 0; i < timelineItems.length; i++) {
   timelineItems[i].addEventListener('click', function() {
     var text = this.getAttribute('data-text');
-    document.getElementById('timeline-text').textContent = text;
+
+    // Supprimer la classe "show" de l'élément précédemment affiché
+    if (timelineText.classList.contains('show')) {
+      timelineText.classList.remove('show');
+    }
+
+    // Ajouter la classe "show" à l'élément contenant le texte
+    setTimeout(function() {
+      timelineText.textContent = text;
+      timelineText.classList.add('show');
+    }, 10);
 
     // Supprimer la classe "selected" de l'élément précédemment sélectionné
     if (selectedItem) {
@@ -118,6 +129,7 @@ window.onload = updateTimeline;
 
 // Appeler la fonction lorsque la fenêtre est redimensionnée
 window.addEventListener('resize', updateTimeline);
+
 
 
 });
