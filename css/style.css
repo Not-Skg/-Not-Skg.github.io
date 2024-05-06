@@ -774,6 +774,14 @@ footer .social-links a:hover {
   margin-bottom: 10px;
   width: 100%;
   text-align: left;
+  overflow: hidden;
+  max-height: 0; /* Hauteur initiale à 0 */
+  transition: max-height 0.5s ease-out; /* Animation de la hauteur sur 0.5s */
+}
+
+#timeline-text.show {
+  max-height: 500px; /* Hauteur maximale à 500px */
+  transition: max-height 0.5s ease-in; /* Animation de la hauteur sur 0.5s */
 }
 
 .timeline-line {
