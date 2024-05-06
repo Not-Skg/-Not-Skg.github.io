@@ -102,25 +102,35 @@ for (var i = 0; i < timelineItems.length; i++) {
   timelineItems[i].addEventListener('click', function() {
     var text = this.getAttribute('data-text');
 
-    // Supprimer la classe "show" de l'élément précédemment affiché
-    if (timelineText.classList.contains('show')) {
+    // Vérifier si l'élément cliqué est déjà sélectionné
+    if (this === selectedItem) {
+      // Supprimer la classe "selected" de l'élément sélectionné
+      this.classList.remove('selected');
+      // Masquer le texte
       timelineText.classList.remove('show');
+      // Réinitialiser la variable "selectedItem"
+      selectedItem = null;
+    } else {
+      // Supprimer la classe "show" de l'élément précédemment affiché
+      if (timelineText.classList.contains('show')) {
+        timelineText.classList.remove('show');
+      }
+
+      // Ajouter la classe "show" à l'élément contenant le texte
+      setTimeout(function() {
+        timelineText.textContent = text;
+        timelineText.classList.add('show');
+      }, 10);
+
+      // Supprimer la classe "selected" de l'élément précédemment sélectionné
+      if (selectedItem) {
+        selectedItem.classList.remove('selected');
+      }
+
+      // Ajouter la classe "selected" à l'élément cliqué
+      this.classList.add('selected');
+      selectedItem = this;
     }
-
-    // Ajouter la classe "show" à l'élément contenant le texte
-    setTimeout(function() {
-      timelineText.textContent = text;
-      timelineText.classList.add('show');
-    }, 10);
-
-    // Supprimer la classe "selected" de l'élément précédemment sélectionné
-    if (selectedItem) {
-      selectedItem.classList.remove('selected');
-    }
-
-    // Ajouter la classe "selected" à l'élément cliqué
-    this.classList.add('selected');
-    selectedItem = this;
   });
 }
 
@@ -129,7 +139,6 @@ window.onload = updateTimeline;
 
 // Appeler la fonction lorsque la fenêtre est redimensionnée
 window.addEventListener('resize', updateTimeline);
-
 
 
 });
