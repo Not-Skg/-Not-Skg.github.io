@@ -745,13 +745,14 @@ footer .social-links a:hover {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between; /* Ajoutez cette ligne pour espacer uniformément les éléments de la liste */
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
 
 .timeline li {
-  flex-basis: 20%; /* Ajoutez cette ligne pour donner une largeur fixe aux éléments de la liste */
+  flex-basis: 20%;
+  flex-shrink: 1; /* Ajoutez cette ligne pour permettre aux éléments de la liste de se rétrécir */
   text-align: center;
   position: relative;
 }
