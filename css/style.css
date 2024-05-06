@@ -745,7 +745,7 @@ footer .social-links a:hover {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around; /* Distribuez l'espace disponible uniformément autour de chaque élément de la liste */
   padding: 0;
   margin: 0;
 }
@@ -780,3 +780,4 @@ footer .social-links a:hover {
 .timeline-content p {
   display: none;
 }
+
