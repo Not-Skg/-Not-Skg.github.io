@@ -95,11 +95,21 @@ function updateTimeline() {
 
 // Ajouter un gestionnaire d'événements pour les clics sur les éléments de la timeline
 var timelineItems = document.getElementsByClassName('timeline-item');
+var selectedItem = null;
 
 for (var i = 0; i < timelineItems.length; i++) {
   timelineItems[i].addEventListener('click', function() {
     var text = this.getAttribute('data-text');
     document.getElementById('timeline-text').textContent = text;
+
+    // Supprimer la classe "selected" de l'élément précédemment sélectionné
+    if (selectedItem) {
+      selectedItem.classList.remove('selected');
+    }
+
+    // Ajouter la classe "selected" à l'élément cliqué
+    this.classList.add('selected');
+    selectedItem = this;
   });
 }
 
