@@ -756,6 +756,16 @@ footer .social-links a:hover {
   z-index: 1;
 }
 
+
+.timeline-item:hover {
+  background-color: #ccc; /* Couleur de survol */
+}
+
+.timeline-item.selected {
+  background-color: #FF9800; /* Couleur de sélection */
+}
+
+
 #timeline-text {
   font-family: Arial, sans-serif;
   font-size: 1.1em;
