@@ -744,6 +744,7 @@ footer .social-links a:hover {
 
 .timeline-item {
   position: absolute;
+  margin-bottom: 15px;
   width: 100px;
   height: 100px;
   background-color: #ddd;
@@ -771,7 +772,7 @@ footer .social-links a:hover {
   font-size: 1.1em;
   color: #333;
   line-height: 1.5;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   width: 100%;
   text-align: left;
   overflow: hidden;
