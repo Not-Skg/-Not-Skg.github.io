@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Timeline
 window.onload = function() {
   var timeline = document.getElementById('timeline');
+  var timelineContainer = document.getElementById('timeline-container');
   var timelineItems = timeline.getElementsByClassName('timeline-item');
 
   // Calculer les intervalles entre les dates
@@ -87,7 +88,7 @@ window.onload = function() {
   for (var i = 0; i < timelineItems.length; i++) {
     var intervalFromMin = dates[i] - minDate;
     var percentage = intervalFromMin / totalInterval;
-    var left = percentage * (timeline.offsetWidth - timelineItems[i].offsetWidth) + 'px';
+    var left = percentage * (timelineContainer.offsetWidth - timelineItems[i].offsetWidth) + 'px';
 
     timelineItems[i].style.left = left;
   }
