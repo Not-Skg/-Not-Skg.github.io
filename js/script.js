@@ -110,20 +110,19 @@ for (var i = 0; i < timelineItems.length; i++) {
       this.classList.remove('selected');
       // Masquer le texte et le titre
       timelineText.classList.remove('show');
-      timelineTitle.classList.remove('show');
+      timelineTitle.textContent = ''; // Réinitialiser le contenu du titre
       // Réinitialiser la variable "selectedItem"
       selectedItem = null;
     } else {
       // Supprimer la classe "show" de l'élément précédemment affiché
       if (timelineText.classList.contains('show')) {
         timelineText.classList.remove('show');
-        timelineTitle.classList.remove('show');
+        timelineTitle.textContent = ''; // Réinitialiser le contenu du titre
       }
 
       // Ajouter la classe "show" à l'élément contenant le texte et le titre
       setTimeout(function() {
         timelineTitle.textContent = title; // Afficher le titre dans l'élément de titre
-        timelineTitle.classList.add('show');
         timelineText.textContent = text;
         timelineText.classList.add('show');
       }, 10);
@@ -145,6 +144,5 @@ window.onload = updateTimeline;
 
 // Appeler la fonction lorsque la fenêtre est redimensionnée
 window.addEventListener('resize', updateTimeline);
-
 
 });
