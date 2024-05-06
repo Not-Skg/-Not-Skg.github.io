@@ -761,5 +761,7 @@ footer .social-links a:hover {
   color: #333;
   line-height: 1.5;
   margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
 }
 
