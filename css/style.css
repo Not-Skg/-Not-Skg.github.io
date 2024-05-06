@@ -751,10 +751,10 @@ footer .social-links a:hover {
 }
 
 .timeline li {
-  flex-basis: 20%;
-  flex-shrink: 1;
+  flex-basis: 10%; /* Ajoutez une largeur de base pour chaque élément de la liste */
+  flex-grow: 1; /* Distribuez l'espace restant uniformément entre les éléments */
   text-align: center;
-  position: relative; /* Ajoutez cette ligne pour positionner les marqueurs par rapport à l'élément parent */
+  position: relative;
 }
 
 .timeline-point {
@@ -767,7 +767,7 @@ footer .social-links a:hover {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  position: relative; /* Modifiez cette ligne pour positionner les marqueurs par rapport à l'élément parent */
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
