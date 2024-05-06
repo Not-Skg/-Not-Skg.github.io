@@ -733,51 +733,25 @@ footer .social-links a:hover {
 
 /* TIMELINE */
 
-.timeline {
+#timeline {
   position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-}
-
-.timeline ul {
+  width: 100%;
+  height: 100px;
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-around; /* Distribuez l'espace disponible uniformément autour de chaque élément de la liste */
-  padding: 0;
-  margin: 0;
+  justify-content: space-between;
 }
 
-.timeline li {
-  flex-basis: 10%; /* Ajoutez une largeur de base pour chaque élément de la liste */
-  flex-grow: 1; /* Distribuez l'espace restant uniformément entre les éléments */
-  text-align: center;
-  position: relative;
-}
-
-.timeline-point {
-  display: block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+.timeline-item {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
   border-radius: 50%;
-  background-color: #007bff;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.timeline-content {
-  margin-top: 30px;
-}
-
-.timeline-content p {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
 }
 
