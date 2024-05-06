@@ -756,7 +756,10 @@ footer .social-links a:hover {
 }
 
 #timeline-text {
-  margin-top: 20px;
-  font-size: 18px;
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
