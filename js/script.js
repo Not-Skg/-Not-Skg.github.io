@@ -69,6 +69,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
   
 // Timeline
+function updateTimeline() {
+  var timeline = document.getElementById('timeline');
+  var timelineItems = timeline.getElementsByClassName('timeline-item');
+
+  // Calculer les intervalles entre les dates
+  var dates = Array.from(timelineItems).map(function(item) {
+    return new Date(item.getAttribute('data-date')).getTime();
+  });
+
+  var minDate = Math.min.apply(null, dates);
+  var maxDate = Math.max.apply(null, dates);
+
+  var totalInterval = maxDate - minDate;
+
+  // Positionner les éléments
+  for (var i = 0; i < timelineItems.length; i++) {
+    var intervalFromMin = dates[i] - minDate;
+    var percentage = intervalFromMin / totalInterval;
+    var left = percentage * (timeline.offsetWidth - timelineItems[i].offsetWidth) + 'px';
+
+    timelineItems[i].style.left = left;
+  }
+}
+
 // Ajouter un gestionnaire d'événements pour les clics sur les éléments de la timeline
 var timelineItems = document.getElementsByClassName('timeline-item');
 var selectedItem = null;
@@ -117,5 +141,12 @@ for (var i = 0; i < timelineItems.length; i++) {
     }
   });
 }
+
+
+// Appeler la fonction lorsque la page est chargée
+window.onload = updateTimeline;
+
+// Appeler la fonction lorsque la fenêtre est redimensionnée
+window.addEventListener('resize', updateTimeline);
 
 });
