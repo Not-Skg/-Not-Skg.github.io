@@ -384,7 +384,7 @@ body.dark-mode .dropbtn{
 
 .toc-item[data-logo="logoChGeneral"]::before {
   background-image: url('/img/ChGeneral.png');
-  background-size: 1300%;
+  background-size: 250%;
   background-repeat: no-repeat;
   background-position: center;
 
