@@ -365,7 +365,6 @@ body.dark-mode .dropbtn{
   display: inline-block;
   width: 60px;
   height: 60px;
-  background-color: #ccc;
   border: 2px solid #333;
   border-radius: 50%;
   position: absolute;
@@ -375,7 +374,7 @@ body.dark-mode .dropbtn{
 }
 
 /* Ajoutez les logos en fonction de l'attribut "data-logo" */
-.toc-item[data-logo="logoChGeneral"]::before {
+.toc-item[data-logo="logoChMaths"]::before {
   background-image: url('/img/ChMaths.png');
   background-size: 250%;
   background-repeat: no-repeat;
@@ -383,7 +382,7 @@ body.dark-mode .dropbtn{
 
 }
 
-}
+
 
 
 body.dark-mode .toc-item {
