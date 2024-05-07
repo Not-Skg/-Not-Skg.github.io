@@ -390,14 +390,14 @@ body.dark-mode .dropbtn{
 
 .toc-item[data-logo="logoThLearn"]::before {
   background-image: url('/img/ThLearn.png');
-  background-size: 300%;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .toc-item[data-logo="logoThPractice"]::before {
   background-image: url('/img/ThPractice.png');
-  background-size: 300%;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
