@@ -366,9 +366,10 @@ body.dark-mode .dropbtn{
   width: 60px;
   height: 60px;
   background-color: #ccc;
+  border: 2px solid #333;
   border-radius: 50%;
   position: absolute;
-  left: -30px;
+  left: -40px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -376,9 +377,10 @@ body.dark-mode .dropbtn{
 /* Ajoutez les logos en fonction de l'attribut "data-logo" */
 .toc-item[data-logo="logoChGeneral"]::before {
   background-image: url('/img/ChMaths.png');
-  background-size: contain;
+  background-size: 250%;
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 }
@@ -390,6 +392,7 @@ body.dark-mode .toc-item {
 
 body.dark-mode .toc-item::before {
   background-color: #444;
+  border: 2px solid #fff;
 }
 
 .my-toc {
