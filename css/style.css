@@ -363,12 +363,12 @@ body.dark-mode .dropbtn{
 .toc-item::before {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
   background-color: #ccc;
   border-radius: 50%;
   position: absolute;
-  left: 5px;
+  left: -30px;
   top: 50%;
   transform: translateY(-50%);
 }
