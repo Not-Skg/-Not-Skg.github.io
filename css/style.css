@@ -379,7 +379,6 @@ body.dark-mode .dropbtn{
   background-size: 250%;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .toc-item[data-logo="logoChGeneral"]::before {
@@ -387,9 +386,21 @@ body.dark-mode .dropbtn{
   background-size: 300%;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
+.toc-item[data-logo="logoThLearn"]::before {
+  background-image: url('/img/ThLearn.png');
+  background-size: 300%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.toc-item[data-logo="logoThPractice"]::before {
+  background-image: url('/img/ThPractice.png');
+  background-size: 300%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 body.dark-mode .toc-item {
   color: #fff;
