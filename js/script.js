@@ -102,7 +102,7 @@ var timelineTitle = document.getElementById('timeline-title');
 for (var i = 0; i < timelineItems.length; i++) {
   timelineItems[i].addEventListener('click', function() {
     var text = this.getAttribute('data-text');
-     var title = this.getAttribute('data-title');
+    var title = this.getAttribute('data-title');
 
     // Vérifier si l'élément cliqué est déjà sélectionné
     if (this === selectedItem) {
