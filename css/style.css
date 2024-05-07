@@ -350,6 +350,13 @@ body.dark-mode .dropbtn{
   border-radius: 5px;
 }
 
+.toc-item {
+  font-size: 1.2em;
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+}
 
 .my-toc {
     display: inline-block;
