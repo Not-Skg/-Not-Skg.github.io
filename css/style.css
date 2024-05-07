@@ -784,16 +784,21 @@ footer .social-links a:hover {
 }
 
 #timeline-title {
-  font-size: 1.5em; /* Taille de police du titre */
-  margin-bottom: 10px; /* Marge inférieure du titre */
-  height: 35px; /* Hauteur initiale du titre */
-  overflow: hidden; /* Masquer le contenu débordant */
-  transition: height 0.5s ease-out; /* Animation de la hauteur sur 0.5s */
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+  max-height: 0; /* Hauteur initiale à 0 */
+  transition: max-height 0.5s ease-out; /* Animation de la hauteur sur 0.5s */
 }
 
 #timeline-title.show {
-  height: auto; /* Hauteur automatique du titre */
-  transition: height 0.5s ease-in; /* Animation de la hauteur sur 0.5s */
+  max-height: 500px; /* Hauteur maximale à 500px */
+  transition: max-height 0.5s ease-in; /* Animation de la hauteur sur 0.5s */
 }
 
 .timeline-line {
