@@ -358,6 +358,14 @@ body.dark-mode .dropbtn{
   padding: 5px 10px;
 }
 
+.toc-logo {
+  width: 32px; 
+  height: 32px; 
+  vertical-align: middle; 
+  margin-right: 5px; 
+}
+
+
 body.dark-mode .toc-item {
   color: #fff;
 }
