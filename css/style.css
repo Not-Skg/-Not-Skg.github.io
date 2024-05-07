@@ -356,20 +356,45 @@ body.dark-mode .dropbtn{
   text-decoration: none;
   display: inline-block;
   padding: 5px 10px;
+  position: relative; 
+  padding-left: 30px; 
 }
 
-.toc-logo {
-  width: 20%;
-  height: 20%;
+.toc-item::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
   border-radius: 50%;
-  overflow: hidden;
-  vertical-align: middle; 
-  margin-right: 5px; 
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Ajoutez les logos en fonction de l'attribut "data-logo" */
+.toc-item[data-logo="logoChGeneral"]::before {
+  background-image: url('path/to/logo1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.toc-item[data-logo="logoChMaths"]::before {
+  background-image: url('path/to/ChMaths.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
 body.dark-mode .toc-item {
   color: #fff;
+}
+
+body.dark-mode .toc-item::before {
+  background-color: #444;
 }
 
 .my-toc {
