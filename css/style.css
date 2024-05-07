@@ -422,6 +422,7 @@ body.dark-mode .dropbtn{
   background-position: center;
 }
 
+
 body.dark-mode .toc-item {
   color: #fff;
 }
@@ -429,6 +430,21 @@ body.dark-mode .toc-item {
 body.dark-mode .toc-item::before {
   border: 2px solid #fff;
 }
+
+.logo-circle {
+  display: inline-block;
+  width: 20px; /* Ajuster la largeur en fonction de vos besoins */
+  height: 20px; /* Ajuster la hauteur en fonction de vos besoins */
+  border-radius: 50%;
+  background-color: #333; /* Ajuster la couleur de fond en fonction de vos besoins */
+  margin-right: 10px; /* Ajuster l'espace entre le cercle et le texte en fonction de vos besoins */
+  background-image: url("../img/completebeginner.png");
+  background-size: contain; /* Ou "cover", en fonction de vos besoins */
+}
+
+
+
+
 
 .my-toc {
     display: inline-block;
