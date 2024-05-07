@@ -408,6 +408,7 @@ body.dark-mode .dropbtn{
   background-image: url('/img/RmProg.png');
   background-size: 80%;
   border: none !important;
+  border-radius: 0% !important;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -416,6 +417,7 @@ body.dark-mode .dropbtn{
   background-image: url('/img/RmCrypt.png');
   background-size: 80%;
   border: none !important;
+  border-radius: 0% !important;
   background-repeat: no-repeat;
   background-position: center;
 }
