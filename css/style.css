@@ -358,6 +358,10 @@ body.dark-mode .dropbtn{
   padding: 5px 10px;
 }
 
+body.dark-mode .toc-item-span {
+  color: #fff;
+}
+
 .my-toc {
     display: inline-block;
     text-align: left;
