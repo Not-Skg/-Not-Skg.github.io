@@ -359,8 +359,9 @@ body.dark-mode .dropbtn{
 }
 
 .toc-logo {
-  width: 32px; 
-  height: 32px; 
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
   vertical-align: middle; 
   margin-right: 5px; 
 }
