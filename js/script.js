@@ -97,12 +97,12 @@ function updateTimeline() {
 var timelineItems = document.getElementsByClassName('timeline-item');
 var selectedItem = null;
 var timelineText = document.getElementById('timeline-text');
-var timelineTitle = document.getElementById('timeline-title'); // Ajouter une référence à l'élément de titre
+var timelineTitle = document.getElementById('timeline-title'); 
 
 for (var i = 0; i < timelineItems.length; i++) {
   timelineItems[i].addEventListener('click', function() {
     var text = this.getAttribute('data-text');
-    var title = this.getAttribute('data-title');
+     var title = this.getAttribute('data-title');
 
     // Vérifier si l'élément cliqué est déjà sélectionné
     if (this === selectedItem) {
@@ -110,23 +110,21 @@ for (var i = 0; i < timelineItems.length; i++) {
       this.classList.remove('selected');
       // Masquer le texte et le titre
       timelineText.classList.remove('show');
-      timelineTitle.classList.remove('show'); // Ajouter cette ligne
-      timelineTitle.textContent = ''; // Réinitialiser le contenu du titre
+      timelineTitle.classList.remove('show'); 
       // Réinitialiser la variable "selectedItem"
       selectedItem = null;
     } else {
       // Supprimer la classe "show" de l'élément précédemment affiché
       if (timelineText.classList.contains('show')) {
         timelineText.classList.remove('show');
-        timelineTitle.classList.remove('show'); // Ajouter cette ligne
-        timelineTitle.textContent = ''; // Réinitialiser le contenu du titre
+        timelineTitle.classList.remove('show'); 
       }
 
       // Ajouter la classe "show" à l'élément contenant le texte et le titre
       setTimeout(function() {
         timelineTitle.textContent = title; // Afficher le titre dans l'élément de titre
         timelineText.textContent = text;
-        timelineTitle.classList.add('show'); // Ajouter cette ligne
+        timelineTitle.classList.add('show'); 
         timelineText.classList.add('show');
       }, 10);
 
