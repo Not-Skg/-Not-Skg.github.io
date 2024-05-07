@@ -406,14 +406,14 @@ body.dark-mode .dropbtn{
 
 .toc-item[data-logo="logoRmProg"]::before {
   background-image: url('/img/RmProg.png');
-  background-size: 250%;
+  background-size: 60%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .toc-item[data-logo="logoRmCrypt"]::before {
   background-image: url('/img/RmCrypt.png');
-  background-size: 250%;
+  background-size: 60%;
   background-repeat: no-repeat;
   background-position: center;
 }
