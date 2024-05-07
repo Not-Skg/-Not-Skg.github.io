@@ -142,7 +142,6 @@ for (var i = 0; i < timelineItems.length; i++) {
   });
 }
 
-
 // Appeler la fonction lorsque la page est chargée
 window.onload = updateTimeline;
 
