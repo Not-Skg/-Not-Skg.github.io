@@ -393,7 +393,7 @@ body.dark-mode .dropbtn{
   background-size: 90%;
   background-color: rgb(42,95,134); 
   background-repeat: no-repeat;
-  background-position: 50 % 60%;
+  background-position: 50% 60%;
 }
 
 .toc-item[data-logo="logoThPractice"]::before {
