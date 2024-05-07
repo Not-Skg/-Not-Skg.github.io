@@ -375,17 +375,12 @@ body.dark-mode .dropbtn{
 
 /* Ajoutez les logos en fonction de l'attribut "data-logo" */
 .toc-item[data-logo="logoChGeneral"]::before {
-  background-image: url('path/to/logo1.png');
+  background-image: url('/img/ChMaths.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.toc-item[data-logo="logoChMaths"]::before {
-  background-image: url('path/to/ChMaths.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 
