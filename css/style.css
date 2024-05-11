@@ -424,7 +424,16 @@ body.dark-mode .dropbtn{
 
 .toc-item[data-logo="CompleteBeginner"]::before {
   background-image: url('/img/completebeginner.png');
-  background-size: 300%;
+  background-size: 100%;
+  background-color: rgb(177,94,34); 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.toc-item[data-logo="CyberDefense"]::before {
+  background-image: url('/img/cyberdefense.png');
+  background-size: 100%;
+  background-color: rgb(177,94,34); 
   background-repeat: no-repeat;
   background-position: center;
 }
