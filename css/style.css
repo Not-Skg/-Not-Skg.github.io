@@ -422,6 +422,15 @@ body.dark-mode .dropbtn{
   background-position: center;
 }
 
+.toc-item[data-logo="CompleteBeginner"]::before {
+  background-image: url('/img/completebeginner.png');
+  background-size: 100%;
+  border: none !important;
+  border-radius: 0% !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 body.dark-mode .toc-item {
   color: #fff;
