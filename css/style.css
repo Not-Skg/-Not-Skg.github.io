@@ -373,6 +373,28 @@ body.dark-mode .dropbtn{
   transform: translateY(-50%);
 }
 
+.toc-item2 {
+  font-size: 1.2em;
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative; 
+}
+
+.toc-item2::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  left: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* Ajoutez les logos en fonction de l'attribut "data-logo" */
 .toc-item[data-logo="logoChMaths"]::before {
   background-image: url('/img/ChMaths.png');
@@ -422,7 +444,7 @@ body.dark-mode .dropbtn{
   background-position: center;
 }
 
-.toc-item[data-logo="CompleteBeginner"]::before {
+.toc-item2[data-logo="CompleteBeginner"]::before {
   background-image: url('/img/completebeginner.png');
   background-size: 100%;
   background-color: rgb(29,39,62); 
@@ -430,7 +452,7 @@ body.dark-mode .dropbtn{
   background-position: center;
 }
 
-.toc-item[data-logo="CyberDefense"]::before {
+.toc-item2[data-logo="CyberDefense"]::before {
   background-image: url('/img/cyberdefense.png');
   background-size: 100%;
   background-color: rgb(29,39,62); 
@@ -447,6 +469,13 @@ body.dark-mode .toc-item::before {
   border: 2px solid #fff;
 }
 
+body.dark-mode .toc-item2 {
+  color: #fff;
+}
+
+body.dark-mode .toc-item2::before {
+  border: 2px solid #fff;
+}
 
 
 
