@@ -423,7 +423,7 @@ body.dark-mode .dropbtn{
 }
 
 .toc-item[data-logo="CompleteBeginner"]::before {
-  background-image: url('/img/ChGeneral.png');
+  background-image: url('/img/completebeginner.png');
   background-size: 300%;
   background-repeat: no-repeat;
   background-position: center;
