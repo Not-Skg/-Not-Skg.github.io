@@ -435,7 +435,7 @@ body.dark-mode .dropbtn{
   background-size: 100%;
   background-color: rgb(29,39,62); 
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 25% 25%;
 }
 
 
