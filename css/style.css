@@ -704,6 +704,10 @@ body.dark-mode footer {
   line-height: 1.5;
 }
 
+body.dark-mode .response-box {
+  color: #ddd;
+}
+
 
 
 /* Back to top Button */
