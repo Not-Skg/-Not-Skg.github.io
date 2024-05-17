@@ -54,6 +54,10 @@ body.dark-mode .instructions {
   margin-bottom: 10px;
 }
 
+.orange {
+  color: #FF9800;
+}
+
 /* Style pour les notes */
 .notes {
   font-family: Georgia, serif;
