@@ -46,6 +46,13 @@ body.dark-mode .instructions {
   color: #ddd;
 }
 
+.question {
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+  color: RGB(255, 152, 0);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
 
 /* Style pour les notes */
 .notes {
