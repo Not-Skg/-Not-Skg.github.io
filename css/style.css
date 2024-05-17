@@ -52,6 +52,7 @@ body.dark-mode .instructions {
   color: RGB(255, 152, 0);
   line-height: 1.5;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .orange {
