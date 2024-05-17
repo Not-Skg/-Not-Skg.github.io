@@ -694,11 +694,14 @@ body.dark-mode footer {
 
 
 .response-box {
-  width: 90%; /* Prendre 90% de la largeur de son parent */
   padding: 15px; /* Ajouter un peu de rembourrage interne */
-  border: 1px solid #ccc; /* Ajouter une bordure */
+  border: 1px solid RGB(255, 152, 0); /* Ajouter une bordure */
   border-radius: 5px; /* Arrondir les coins */
   margin: 10px 0; /* Ajouter un peu de marge au-dessus et en-dessous */
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.5;
 }
 
 
