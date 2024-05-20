@@ -2,7 +2,7 @@
 /* BANNER */
 .banner-container {
   background-color: #1A1919; /* Ajouter une couleur d'arrière-plan */
-  background-image: url("../img/MainBanner.jpg"); /* Ajouter une image d'arrière-plan */
+  background-image: url("../img/Mainbanner.jpg"); /* Ajouter une image d'arrière-plan */
   background-position: center ; /* Ajuster la position de l'image */
   background-repeat: no-repeat;
   background-size: contain; /* Ajuster la taille de l'image */
