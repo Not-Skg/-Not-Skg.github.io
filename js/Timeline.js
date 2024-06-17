@@ -1,6 +1,6 @@
 // Globals
 var prefixes         = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-var $container       = $('.container');
+var $cont       = $('.cont');
 var $timeline        = $('.timeline');
 var $timelineItem    = $('.timeline-item');
 var $timelineContent = $('.timeline-content');
